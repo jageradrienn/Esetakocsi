@@ -1,0 +1,187 @@
+@import './fonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer{
+  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Kodchasan, Arial, sans-serif;
+  @apply m-0 p-0 overflow-x-hidden bg-Cream 
+}
+
+.container {
+  @apply flex flex-col gap-0 items-center w-full
+}
+
+header {
+  @apply fixed top-0 h-[5vw] w-full z-10 flex items-center justify-between bg-CofeeBrown/60 backdrop-blur px-8
+}
+
+main {
+  @apply flex-1 mt-[5vw] w-full
+} 
+
+.menu {
+  @apply flex justify-between gap-10 list-none m-0 p-0
+}
+
+.menu li {
+  @apply m-0
+}
+
+.menu a {
+  @apply text-black no-underline
+}
+
+.menu a:hover {
+  @apply underline underline-offset-4
+}
+
+.menu a.active {
+  @apply no-underline;
+}
+
+.menu a.active:hover {
+  @apply underline underline-offset-4;
+}
+
+.asymetric-article {
+  @apply w-full
+}
+
+footer {
+  @apply bg-CofeeBrown/60 backdrop-blur w-full p-8 text-xs
+}
+
+.hero{
+@apply w-full h-[90vh] relative xl:pt-8 
+}
+
+.hero-base{
+border-radius: 200px 200px 0px 0px;
+background: linear-gradient(180deg, #FAF5EC 18.1%, rgba(255, 255, 255, 0.00) 100%);
+@apply w-[100vw] h-[35vh] absolute md:-bottom-10 xl:bottom-0 left-1/2 -translate-x-1/2
+}
+
+.hero-wrapper{
+  @apply w-full h-full left-1/2 -translate-x-1/2 sm:translate-y-10 xl:translate-y-0 flex flex-col flex-shrink-0 relative 
+} 
+
+.hero-swiper{
+  @apply w-full h-full absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2
+}
+
+.hero-slide-wrapper{
+  background-image: url('img/striped-ball.svg');
+  @apply w-full h-full flex flex-col flex-shrink-0 bg-contain bg-no-repeat bg-center relative left-1/2 -translate-x-1/2 
+}
+
+.swiper-container{
+  @apply w-full h-full absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2
+}
+
+.swiper-wrapper{
+  @apply w-full h-full
+}
+
+.swiper-slide{
+  @apply w-full flex justify-center items-center
+}
+
+.slider-pics{
+  @apply w-[85%] h-[85%] bg-contain bg-no-repeat bg-center absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2
+}
+
+.first-element, .second-element, .third-element{
+  @apply w-[25%] h-[25%] bg-contain bg-no-repeat bg-center absolute
+}
+
+.title{
+@apply flex flex-col items-center justify-between w-full h-[40vw] pt-[2vw] pr-[6vw] pb-[5.75vw] pl-[6vw] mb-32
+}
+
+.title-clip{
+  @apply text-[15vh] font-rubik relative text-transparent
+}
+
+.title-clip::before {
+  content: "ÉLMÉNYJÁRMŰ";
+  background: url('img/elmenyjarmualap.svg') ; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @apply absolute top-0 left-0 w-full h-full bg-no-repeat bg-center bg-cover bg-clip-text 
+}
+
+.enum{
+  @apply h-[90vh] w-full flex justify-start mb-32 md:text-xl xl:text-2xl flex-shrink-0 relative
+}
+
+.orange-decor-container{
+  @apply w-[60%] -translate-x-16 relative
+}
+
+.enumlist-container{
+  @apply flex flex-col w-[60%] h-full absolute -top-[20%] translate-x-80
+}
+
+.orande-circle{
+  @apply md:w-[100vh] md:h-[100vh] xl:w-[80vh] xl:h-[80vh] bg-Orange/10 rounded-full relative
+}
+
+.orange-circle-striped{
+@apply h-[70%] w-[70%] absolute top-1/2 -translate-y-1/2 translate-x-10 opacity-20
+}
+
+.about{
+  @apply py-16 px-8 flex justify-start items-start gap-10 w-full h-[70vh] 
+}
+
+.about h2{
+  @apply font-krona text-[9vh]
+}
+
+.about-article{
+@apply text-justify md:text-xl xl:text-2xl
+}
+
+.word-wrapper{
+  @apply flex justify-start gap-2 items-start w-[50%] flex-shrink-0
+}
+
+.letter-wrapper{
+  @apply w-[47%] h-full -translate-y-20 flex flex-col items-center gap-4 flex-shrink-0
+}
+
+.o-wrapper{
+  @apply relative 
+}
+
+.white-circle{
+  @apply w-[19vw] h-[19vw] bg-white rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 
+}
+
+.arrow-wrapper{
+  @apply flex flex-col items-end gap-4
+}
+
+.arrows{
+@apply w-[15vh] h-[10vh] flex justify-end items-center relative
+}
+
+.arrows :first-child{
+clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
+  @apply w-[50%] h-[10vh] bg-Orange translate-x-4 border-2 absolute -right-2
+}
+
+.arrows :last-child{
+clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
+  @apply w-[50%] h-[10vh] bg-black/50 border-2 absolute right-4
+}

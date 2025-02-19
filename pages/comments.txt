@@ -1,0 +1,59 @@
+<!--         <div class="hero-slide-wrapper">
+          <div class="slider-pics" :style="{ backgroundImage: `url('${slides[0].sliderImage}')` }"></div>
+          <div :class="slides[0].elements[0].rotation" class="first-element top-40 -left-24" :style="{
+            backgroundImage: `url('${slides[0].elements[0].firstElement}')`
+          }">
+          </div>
+
+          <div :class="slides[0].elements[1].rotation" class="second-element -bottom-4 -left-8" :style="{
+            backgroundImage: `url('${slides[0].elements[1].secondElement}')`
+          }">
+          </div>
+
+          <div :class="slides[0].elements[2].rotation" class="third-element bottom-10 -right-28" :style="{
+            backgroundImage: `url('${slides[0].elements[2].thirdElement}')`
+          }">
+          </div>
+
+
+
+                      :initial="{ opacity: 0, x: elIndex === 2 ? -100 : 100 }" :animate="{
+                      opacity: 1,
+                      x: 0,
+                      transition: { delay: 0.5, duration: 1 },
+                      scale: [1, 1.1, 1],
+                    }" :exit="{
+                      opacity: 0,
+                      x: elIndex === 2 ? -100 : 100,
+                      transition: { duration: 1 },
+                    }"
+                    
+<div v-for="(element, elIndex) in slide.elements" :key="EID"
+                    :class="[element.class, element.rotation, element.position]"
+                    :style="{ backgroundImage: `url('${element.image}')` }" </div>
+
+
+        </div> -->
+
+
+
+
+<!-- <swiper :loop="true" :autoplay="{ delay: 5000 }">
+    <swiper-slide v-for="(slide, index) in slides" :key="index">
+      <div class="slider-pics" :style="{ backgroundImage: `url(${slide.sliderImage})` }" :initial="'hidden'"
+        :animate="'visible'" :exit="'exit'" :variants="fadeInOut">
+      </div>
+      <div class="floated-elements">
+        <div v-for="(element, eIndex) in slide.elements" :key="eIndex" :class="element.class"
+          :style="{ backgroundColor: element.bg }" :initial="'hidden'" :animate="['visible', pulse]" :exit="'exit'"
+          :variants="fadeInOut">
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper>
+
+ -->
+
+<!--  <div class="clip">
+      <img src="/img/ketten.webp" alt="ketten" class="clip-img" />
+    </div> -->
