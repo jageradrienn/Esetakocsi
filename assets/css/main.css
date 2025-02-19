@@ -87,15 +87,15 @@ background: linear-gradient(180deg, #FAF5EC 18.1%, rgba(255, 255, 255, 0.00) 100
 }
 
 .first-element{
-  @apply bg-contain bg-no-repeat bg-center absolute top-40 left-24 rotate-[15deg]
+  @apply bg-contain bg-no-repeat bg-center absolute top-32 -left-40 rotate-[15deg] animate-pulse
 }
 
 .second-element{
-  @apply bg-contain bg-no-repeat bg-center absolute bottom-10 left-20 -rotate-[25deg]
-}
+  @apply bg-contain bg-no-repeat bg-center absolute -bottom-4 -left-32 -rotate-[25deg] animate-pulse
+} 
 
 .third-element{
-  @apply bg-contain bg-no-repeat bg-center absolute bottom-12 right-28 -rotate-[15deg]
+  @apply bg-contain bg-no-repeat bg-center absolute bottom-5 -right-40 -rotate-[15deg] animate-pulse
 }
 
 .title{

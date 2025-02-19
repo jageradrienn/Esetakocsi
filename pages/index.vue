@@ -13,45 +13,45 @@ const slides = ref([
     sliderImage: 'img/cleverchair.svg',
     heading: "Ügyeskocsik",
     elements: [
-      { EID: '0', class: 'first-element', image: 'icons/clock.svg', size: 'w-[20%] h-[20%]' },
-      { EID: '1', class: 'second-element', image: 'icons/whistle.svg', size: 'w-[18%] h-[18%]' },
-      { EID: '2', class: 'third-element', image: 'icons/trofee.svg', size: 'w-[27%] h-[27%]' }
+      { EID: '0', class: 'first-element', image: 'icons/clock.svg', size: 'w-[27%] h-[27%]' },
+      { EID: '1', class: 'second-element', image: 'icons/whistle.svg', size: 'w-[25%] h-[25%]' },
+      { EID: '2', class: 'third-element', image: 'icons/trofee.svg', size: 'w-[37%] h-[37%]' }
     ]
   },
   {
     sliderImage: 'img/citychair.svg',
     heading: "Városikocsik",
     elements: [
-      { EID: '0', class: 'first-element', image: 'icons/sunglasses.svg', size: 'w-[12%] h-[12%]' },
-      { EID: '1', class: 'second-element', image: 'icons/camera.svg', size: 'w-[13%] h-[13%]' },
-      { EID: '2', class: 'third-element', image: 'icons/phonemap.svg', size: 'w-[25%] h-[25%]' }
+      { EID: '0', class: 'first-element', image: 'icons/sunglasses.svg', size: 'w-[30%] h-[30%]' },
+      { EID: '1', class: 'second-element', image: 'icons/camera.svg', size: 'w-[30%] h-[30%]' },
+      { EID: '2', class: 'third-element', image: 'icons/phonemap.svg', size: 'w-[30%] h-[30%]' }
     ]
   },
   {
     sliderImage: 'img/tripchair.svg',
     heading: "Túrakocsik",
     elements: [
-      { EID: '0', class: 'first-element', image: 'icons/mineral.svg', size: 'w-[25%] h-[25%]' },
-      { EID: '1', class: 'second-element', image: 'icons/fruits.svg', size: 'w-[20%] h-[20%]' },
-      { EID: '2', class: 'third-element', image: 'icons/bino.svg', size: 'w-[20%] h-[20%]' }
+      { EID: '0', class: 'first-element', image: 'icons/mineral.svg', size: 'w-[35%] h-[35%]' },
+      { EID: '1', class: 'second-element', image: 'icons/fruits.svg', size: 'w-[23%] h-[23%]' },
+      { EID: '2', class: 'third-element', image: 'icons/bino.svg', size: 'w-[30%] h-[30%]' }
     ]
   },
   {
     sliderImage: 'img/partychair.svg',
     heading: "Bulikocsik",
     elements: [
-      { EID: '0', class: 'first-element', image: 'icons/speaker.svg', size: 'w-[29%] h-[29%]' },
-      { EID: '1', class: 'second-element', image: 'icons/marshmallow.svg', size: 'w-[25%] h-[25%]' },
-      { EID: '2', class: 'third-element', image: 'icons/cooler.svg', size: 'w-[24%] h-[24%]' }
+      { EID: '0', class: 'first-element', image: 'icons/speaker.svg', size: 'w-[35%] h-[35%]' },
+      { EID: '1', class: 'second-element', image: 'icons/marshmallow.svg', size: 'w-[30%] h-[30%]' },
+      { EID: '2', class: 'third-element', image: 'icons/cooler.svg', size: 'w-[28%] h-[28%]' }
     ]
   },
   {
     sliderImage: 'img/walkingchair.svg',
     heading: "Sétakocsik",
     elements: [
-      { EID: '0', class: 'first-element', image: 'icons/flowers.svg', size: 'w-[27%] h-[27%]' },
-      { EID: '1', class: 'second-element', image: 'icons/flower1.svg', size: 'w-[20%] h-[20%]' },
-      { EID: '2', class: 'third-element', image: 'icons/greenleaves.svg', size: 'w-[28%] h-[28%]' }
+      { EID: '0', class: 'first-element', image: 'icons/flowers.svg', size: 'w-[35%] h-[35%]' },
+      { EID: '1', class: 'second-element', image: 'icons/flower1.svg', size: 'w-[32%] h-[32%]' },
+      { EID: '2', class: 'third-element', image: 'icons/greenleaves.svg', size: 'w-[32%] h-[32%]' }
     ]
   }
 ]);
