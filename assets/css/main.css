@@ -14,7 +14,7 @@ html {
 
 body {
   font-family: Kodchasan, Arial, sans-serif;
-  @apply m-0 p-0 overflow-x-hidden bg-Cream 
+  @apply m-0 p-0 overflow-x-hidden bg-Lime text-SmokeBlack
 }
 
 .container {
@@ -62,29 +62,91 @@ footer {
 }
 
 .hero{
-@apply w-full h-[90vh] relative xl:pt-8 
+@apply w-full lg:h-[85vh] relative xl:pt-8 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .hero {
+      height: 35vh;
+  }
+}
+
+
+/* Tablet fekvő mód (pl. iPad landscape) */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .hero {
+      height: 85vh;
+  }
+}
+
+
+/* Telefon álló mód */
+@media (max-width: 767px) and (orientation: portrait) {
+  .hero {
+      height: 50vh;
+  }
+}
+
+
+/* Telefon fekvő mód */
+@media (max-width: 767px) and (orientation: landscape) {
+  .hero {
+      height: 100vh;
+  }
 }
 
 .hero-base{
 border-radius: 200px 200px 0px 0px;
-background: linear-gradient(180deg, #FAF5EC 18.1%, rgba(255, 255, 255, 0.00) 100%);
-@apply w-[100vw] h-[35vh] absolute bottom-0 md:-bottom-4 xl:-bottom-20 left-1/2 -translate-x-1/2
+/* background: linear-gradient(180deg, #FAF5EC 18.1%, rgba(255, 255, 255, 0.00) 100%); */
+background: linear-gradient(180deg, #D9E1D2 0%, #E6EFDF 44.1%, #FAFEF6 100%);
+@apply w-[100vw] h-[100vh] absolute bottom-0 md:-bottom-4 xl:-bottom-20 left-1/2 -translate-x-1/2
 }
 
 .hero-slide-wrapper{
- background-image: url('img/striped-ball.svg');
- background-size: 60vh 60vh;
- background-position: center top;
-  @apply w-full h-[90%] flex flex-col flex-shrink-0 bg-no-repeat relative left-1/2 -translate-x-1/2 md:mt-20 xl:mt-6
-} 
+  @apply w-full h-full flex flex-col flex-shrink-0 relative left-1/2 -translate-x-1/2 mt-10 md:mt-20 xl:mt-6
+}
 
 .hero-swiper{
-  @apply w-full h-[80vh] absolute left-1/2 -translate-x-1/2 -top-[15vh]
+  @apply w-full h-full sm:h-[50vh] md:h-[100vh]  absolute left-1/2 -translate-x-1/2 -top-[15vh]
+}
+
+.swiper-slide-active{
+  transform: scale(1.45) translateX(2.5rem) translateY(-80px) !important;
+  transition: transform 0.6s ease-in-out, width 0.6s ease-in-out !important;
+}
+
+.swiper-slide-next{
+  @apply translate-x-16
+}
+
+@keyframes fadeIN {
+  from {opacity: 0; visibility: hidden;}
+  to {opacity: 1; visibility: visible;}
+}
+
+h1{
+  @apply w-full font-marigo text-center text-4xl md:text-5xl xl:text-6xl text-DarkOlive absolute lg:-right-20 mt-3 lg:-mt-5
+}
+
+h2, .swiper-slide h2 {
+  visibility: hidden;
+}
+
+.swiper-slide-active h2 {
+  animation: fadeIN 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+  color: #868786 !important;
+   @apply text-[3vw] w-[80%] h-20 text-center translate-x-[25vw] -translate-y-[4vw] lg:translate-x-[25vw] lg:-translate-y-[12vw] invisible font-otomanopee
+}
+
+.white-ball{
+  @apply absolute w-[60%] sm:w-[80%] h-full left-1/2 -translate-x-1/2 -bottom-[5.7rem] md:-bottom-[10.7rem] lg:-bottom-[7.7rem] z-10
 }
 
 .slider-pics{
-  @apply w-[50vh] h-[50vh] bg-contain bg-no-repeat bg-center relative left-1/2 -translate-x-1/2 top-1/2 -translate-y-[40%]
+  @apply w-[65%] h-[65%] bg-contain bg-no-repeat bg-center relative left-1/2 -translate-x-1/2 md:-bottom-[17.6rem] lg:-bottom-64 z-20
 }
+
 
 .first-element{
   @apply bg-contain bg-no-repeat bg-center absolute top-32 -left-40 rotate-[15deg] animate-pulse
@@ -96,6 +158,10 @@ background: linear-gradient(180deg, #FAF5EC 18.1%, rgba(255, 255, 255, 0.00) 100
 
 .third-element{
   @apply bg-contain bg-no-repeat bg-center absolute bottom-5 -right-40 -rotate-[15deg] animate-pulse
+}
+
+:root {
+  --swiper-pagination-bottom: 20vh !important; /* Pagination pozíció */
 }
 
 .title{

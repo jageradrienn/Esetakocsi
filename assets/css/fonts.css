@@ -155,7 +155,7 @@
 }
 
 @font-face {
-    font-family: 'Otomanopee One';
+    font-family: 'Otomanopee-One';
     src: url('fonts/OtomanopeeOne-Regular.eot');
     src: url('fonts/OtomanopeeOne-Regular.eot?#iefix') format('embedded-opentype'),
         url('fonts/OtomanopeeOne-Regular.woff2') format('woff2'),
@@ -192,3 +192,31 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Stripes';
+    src: url('fonts/Stripes.eot');
+    src: url('fonts/Stripes.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Stripes.woff2') format('woff2'),
+        url('fonts/Stripes.woff') format('woff'),
+        url('fonts/Stripes.ttf') format('truetype'),
+        url('fonts/Stripes.svg#Stripes') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Marigo';
+    src: url('fonts/MarigoRegular.eot');
+    src: url('fonts/MarigoRegular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MarigoRegular.woff2') format('woff2'),
+        url('fonts/MarigoRegular.woff') format('woff'),
+        url('fonts/MarigoRegular.ttf') format('truetype'),
+        url('fonts/MarigoRegular.svg#MarigoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+

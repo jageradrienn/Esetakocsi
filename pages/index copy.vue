@@ -63,33 +63,20 @@ const slides = ref([
     <section id="home" class="hero">
       <div class="hero-base"></div>
       <div class="hero-slide-wrapper">
-        <h1>ÉLMÉNY. NEKED. MINDENKINEK.</h1>
-        <swiper-container class="hero-swiper" :breakpoints="{
-          768: { slidesPerView: 3 },
-          640: { slidesPerView: 2 },
-          450: { slidesPerView: 1 }
-        }" navigation="true" loop="true" preload-images="false" style="width:100vw">
+        <swiper-container class="hero-swiper" slides-per-view="3" autoplay-delay="4500"
+          autoplay-disable-on-interaction=" false" loop="true" preload-images="false" style="width:100vw">
           <swiper-slide v-for="(slide, index) in slides" :key="index">
-            <img src="/img/whiteStripedBall.svg" alt="ball" class="white-ball">
-            <img :src="slide.sliderImage" alt="slidePic" ref="sliderImages" class="slider-pics">
-            <h2>{{ slide.heading }}</h2>
-
-            <!--  autoplay-delay="4500" autoplay-disable-on-interaction=" false" 
-              <div ref="sliderImages" class="slider-pics" :style="{
+            <div ref="sliderImages" class="slider-pics" :style="{
               backgroundImage: `url('${slide.sliderImage}')`
             }">
-  
-              <div class="first-element" :class="slide.elements[0].size"
+              <!--  <div class="first-element" :class="slide.elements[0].size"
                 :style="{ backgroundImage: `url('${slide.elements[0].image}')` }"></div>
               <div class="second-element" :class="slide.elements[1].size"
                 :style="{ backgroundImage: `url('${slide.elements[1].image}')` }"></div>
               <div class="third-element" :class="slide.elements[2].size"
-                :style="{ backgroundImage: `url('${slide.elements[2].image}')` }"></div> 
-                
-              </div>    
-                -->
-
-            <!-- <h1>{{ slide.heading }}</h1> -->
+                :style="{ backgroundImage: `url('${slide.elements[2].image}')` }"></div> -->
+            </div>
+            <h1>{{ slide.heading }}</h1>
           </swiper-slide>
         </swiper-container>
       </div>
