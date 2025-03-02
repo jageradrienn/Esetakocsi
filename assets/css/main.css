@@ -110,8 +110,16 @@ background: linear-gradient(180deg, #D9E1D2 0%, #E6EFDF 44.1%, #FAFEF6 100%);
   @apply w-full h-full sm:h-[50vh] md:h-[100vh]  absolute left-1/2 -translate-x-1/2 -top-[15vh]
 }
 
+.white-ball{
+  @apply absolute w-[60%] sm:w-[80%] h-full left-1/2 -translate-x-1/2 -bottom-[5.7rem] md:-bottom-[10.7rem] lg:-bottom-[8.5rem] z-10
+}
+
+.slider-pics{
+  @apply w-[68%] h-[68%] bg-contain bg-no-repeat bg-center relative left-1/2 -translate-x-1/2  md:-bottom-[31%] z-20
+}
+
 .swiper-slide-active{
-  transform: scale(1.45) translateX(2.5rem) translateY(-80px) !important;
+  transform: scale(1.45) translateX(2.5rem) translateY(-100px) !important;
   transition: transform 0.6s ease-in-out, width 0.6s ease-in-out !important;
 }
 
@@ -125,7 +133,7 @@ background: linear-gradient(180deg, #D9E1D2 0%, #E6EFDF 44.1%, #FAFEF6 100%);
 }
 
 h1{
-  @apply w-full font-marigo text-center text-4xl md:text-5xl xl:text-6xl text-DarkOlive absolute lg:-right-20 mt-3 lg:-mt-5
+  @apply w-full font-marigo text-center text-4xl md:text-5xl xl:text-6xl text-DarkOlive absolute lg:-right-48 mt-3 lg:-mt-5
 }
 
 h2, .swiper-slide h2 {
@@ -136,19 +144,10 @@ h2, .swiper-slide h2 {
   animation: fadeIN 0.5s ease-in-out forwards;
   animation-delay: 0.5s;
   color: #868786 !important;
-   @apply text-[3vw] w-[80%] h-20 text-center translate-x-[25vw] -translate-y-[4vw] lg:translate-x-[25vw] lg:-translate-y-[12vw] invisible font-otomanopee
+   @apply text-[2vw] lg:text-[2.8vw] w-[80%] h-20 text-center translate-x-[25vw] -translate-y-[4vw] lg:translate-x-[25vw] lg:-translate-y-[14vw] invisible font-otomanopee
 }
 
-.white-ball{
-  @apply absolute w-[60%] sm:w-[80%] h-full left-1/2 -translate-x-1/2 -bottom-[5.7rem] md:-bottom-[10.7rem] lg:-bottom-[7.7rem] z-10
-}
-
-.slider-pics{
-  @apply w-[65%] h-[65%] bg-contain bg-no-repeat bg-center relative left-1/2 -translate-x-1/2 md:-bottom-[17.6rem] lg:-bottom-64 z-20
-}
-
-
-.first-element{
+/* .first-element{
   @apply bg-contain bg-no-repeat bg-center absolute top-32 -left-40 rotate-[15deg] animate-pulse
 }
 
@@ -161,8 +160,8 @@ h2, .swiper-slide h2 {
 }
 
 :root {
-  --swiper-pagination-bottom: 20vh !important; /* Pagination pozíció */
-}
+  --swiper-pagination-bottom: 20vh !important;} /* Pagination pozíció */
+ 
 
 .title{
 @apply flex flex-col items-center justify-between w-full h-[40vw] pt-[2vw] pr-[6vw] pb-[5.75vw] pl-[6vw] mb-32
