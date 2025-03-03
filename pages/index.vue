@@ -63,12 +63,13 @@ const slides = ref([
     <section id="home" class="hero">
       <div class="hero-base"></div>
       <div class="hero-slide-wrapper">
-        <h1>ÉLMÉNY. NEKED. MINDENKINEK.</h1>
+        <h1>VALÓBAN NINCS MÁSODIK!</h1>
         <swiper-container class="hero-swiper" :breakpoints="{
           768: { slidesPerView: 3 },
           640: { slidesPerView: 2 },
           450: { slidesPerView: 1 }
-        }" navigation="true" loop="true" preload-images="false" style="width:100vw">
+        }" navigation="true" autoplay-delay="4500" autoplay-disable-on-interaction=" false" loop="true"
+          preload-images="false" style="width:100vw; transition: transform 0.6s ease-in-out;">
           <swiper-slide v-for="(slide, index) in slides" :key="index">
             <div class="balls-wrapper">
               <img src="/img/whiteStripedBall.svg" alt="ball" class="white-ball">
@@ -76,7 +77,7 @@ const slides = ref([
               <h2>{{ slide.heading }}</h2>
             </div>
 
-            <!--  autoplay-delay="4500" autoplay-disable-on-interaction=" false" 
+            <!--   
               <div ref="sliderImages" class="slider-pics" :style="{
               backgroundImage: `url('${slide.sliderImage}')`
             }">

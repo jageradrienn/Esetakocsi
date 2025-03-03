@@ -65,20 +65,18 @@ footer {
 @apply w-full lg:h-[85vh] relative xl:pt-8 
 }
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1060px) and (orientation: portrait) {
   .hero {
       height: 35vh;
   }
 }
 
-
 /* Tablet fekvő mód (pl. iPad landscape) */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1060px) and (orientation: landscape) {
   .hero {
       height: 85vh;
   }
 }
-
 
 /* Telefon álló mód */
 @media (max-width: 767px) and (orientation: portrait) {
@@ -86,7 +84,6 @@ footer {
       height: 50vh;
   }
 }
-
 
 /* Telefon fekvő mód */
 @media (max-width: 767px) and (orientation: landscape) {
@@ -107,7 +104,7 @@ background: linear-gradient(180deg, #D9E1D2 0%, #E6EFDF 44.1%, #FAFEF6 100%);
 }
 
 .hero-swiper{
-  @apply w-full h-full sm:h-[50vh] md:h-[100vh]  absolute left-1/2 -translate-x-1/2 -top-[15vh]
+  @apply w-full h-full absolute left-1/2 -translate-x-1/2 bottom-0
 }
 
 .balls-wrapper{
@@ -115,16 +112,37 @@ background: linear-gradient(180deg, #D9E1D2 0%, #E6EFDF 44.1%, #FAFEF6 100%);
 }
 
 .white-ball{
-  @apply  w-[60%] sm:w-[80%] absolute left-1/2 -translate-x-1/2
+  @apply  w-[40%] sm:w-[73%] absolute left-1/2 -translate-x-1/2
 }
 
 .slider-pics{
-  @apply w-[68%] h-[68%] bg-contain bg-no-repeat bg-center absolute left-1/2 -translate-x-1/2
+  @apply w-[30vw] h-[30vw] sm:w-[20vw] sm:h-[20vw] bg-contain bg-no-repeat bg-center absolute left-1/2 -translate-x-1/2
+}
+
+.swiper-slide{
+  width:28% !important;
 }
 
 .swiper-slide-active{
-  transform: scale(1.45) translateX(2.5rem) translateY(-12%) !important;
   transition: transform 0.6s ease-in-out, width 0.6s ease-in-out !important;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .swiper-slide-active{
+    transform: scale(1.45) translateY(-10vh) !important;
+}
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  .swiper-slide-active{
+    transform: scale(1.45) translateX(2.5rem) translateY(-5vh) !important;
+}
+}
+
+@media (min-width: 1024px){
+  .swiper-slide-active{
+    transform: scale(1.45) translateX(2.5rem) translateY(-12vh) !important;
+}
 }
 
 .swiper-slide-next{
@@ -148,7 +166,7 @@ h2, .swiper-slide h2 {
   animation: fadeIN 0.5s ease-in-out forwards;
   animation-delay: 0.5s;
   color: #868786 !important;
-   @apply invisible font-otomanopee text-[3.5vw] absolute top-[3vh] lg:top-[4vh] left-[30vw]
+   @apply invisible font-otomanopee text-[3.5vw] absolute left-1/2 -translate-x-1/2 sm:left-[40vw] -top-[0.5vh] sm:top-[0.5vh] lg:-top-[3.5vh] 
 }
 
 /* .first-element{
