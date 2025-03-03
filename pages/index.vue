@@ -70,9 +70,11 @@ const slides = ref([
           450: { slidesPerView: 1 }
         }" navigation="true" loop="true" preload-images="false" style="width:100vw">
           <swiper-slide v-for="(slide, index) in slides" :key="index">
-            <img src="/img/whiteStripedBall.svg" alt="ball" class="white-ball">
-            <img :src="slide.sliderImage" alt="slidePic" ref="sliderImages" class="slider-pics">
-            <h2>{{ slide.heading }}</h2>
+            <div class="balls-wrapper">
+              <img src="/img/whiteStripedBall.svg" alt="ball" class="white-ball">
+              <img :src="slide.sliderImage" alt="slidePic" ref="sliderImages" class="slider-pics">
+              <h2>{{ slide.heading }}</h2>
+            </div>
 
             <!--  autoplay-delay="4500" autoplay-disable-on-interaction=" false" 
               <div ref="sliderImages" class="slider-pics" :style="{
