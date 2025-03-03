@@ -81,7 +81,7 @@ footer {
 /* Telefon álló mód */
 @media (max-width: 767px) and (orientation: portrait) {
   .hero {
-      height: 50vh;
+      height: 45vh;
   }
 }
 
@@ -112,11 +112,11 @@ background: linear-gradient(180deg, #D9E1D2 0%, #E6EFDF 44.1%, #FAFEF6 100%);
 }
 
 .white-ball{
-  @apply  w-[40%] sm:w-[73%] absolute left-1/2 -translate-x-1/2
+  @apply  w-[45%] sm:w-[73%] absolute left-1/2 -translate-x-1/2
 }
 
 .slider-pics{
-  @apply w-[30vw] h-[30vw] sm:w-[20vw] sm:h-[20vw] bg-contain bg-no-repeat bg-center absolute left-1/2 -translate-x-1/2
+  @apply w-[35vw] h-[35vw] sm:w-[20vw] sm:h-[20vw] bg-contain bg-no-repeat bg-center absolute left-1/2 -translate-x-1/2
 }
 
 .swiper-slide{
@@ -129,7 +129,7 @@ background: linear-gradient(180deg, #D9E1D2 0%, #E6EFDF 44.1%, #FAFEF6 100%);
 
 @media (max-width: 767px) and (orientation: portrait) {
   .swiper-slide-active{
-    transform: scale(1.45) translateY(-10vh) !important;
+    transform: scale(1.45) translateY(-4vh) !important;
 }
 }
 
@@ -155,7 +155,7 @@ background: linear-gradient(180deg, #D9E1D2 0%, #E6EFDF 44.1%, #FAFEF6 100%);
 }
 
 h1{
-  @apply w-full font-marigo text-center text-[5vw] text-DarkOlive mt-3 lg:-mt-5
+  @apply w-full font-marigo text-center text-[6.8vw] lg:text-[5vw] text-DarkOlive mt-3 lg:-mt-5
 }
 
 h2, .swiper-slide h2 {
@@ -166,39 +166,28 @@ h2, .swiper-slide h2 {
   animation: fadeIN 0.5s ease-in-out forwards;
   animation-delay: 0.5s;
   color: #868786 !important;
-   @apply invisible font-otomanopee text-[3.5vw] absolute left-1/2 -translate-x-1/2 sm:left-[40vw] -top-[0.5vh] sm:top-[0.5vh] lg:-top-[3.5vh] 
+   @apply invisible font-otomanopee text-[4.5vw] sm:text-[3.5vw] absolute left-1/2 -translate-x-1/2 sm:left-[40vw] -top-[3vh] sm:top-[0.5vh] lg:-top-[3.5vh] 
 }
-
-/* .first-element{
-  @apply bg-contain bg-no-repeat bg-center absolute top-32 -left-40 rotate-[15deg] animate-pulse
-}
-
-.second-element{
-  @apply bg-contain bg-no-repeat bg-center absolute -bottom-4 -left-32 -rotate-[25deg] animate-pulse
-} 
-
-.third-element{
-  @apply bg-contain bg-no-repeat bg-center absolute bottom-5 -right-40 -rotate-[15deg] animate-pulse
-}
-
-:root {
-  --swiper-pagination-bottom: 20vh !important;} /* Pagination pozíció */
- 
 
 .title{
 @apply flex flex-col items-center justify-between w-full h-[40vw] pt-[2vw] pr-[6vw] pb-[5.75vw] pl-[6vw] mb-32
 }
 
-.title-clip{
+/* .title-clip{
   @apply text-[15vh] font-rubik relative text-transparent
 }
-
+ 
 .title-clip::before {
   content: "ÉLMÉNYJÁRMŰ";
   background: url('img/elmenyjarmualap.svg') ; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   @apply absolute top-0 left-0 w-full h-full bg-no-repeat bg-center bg-cover bg-clip-text 
+}
+*/
+
+.title-striped{
+@apply font-stripes text-[13vw]
 }
 
 .enum{
@@ -209,8 +198,12 @@ h2, .swiper-slide h2 {
   @apply w-[60%] -translate-x-16 relative
 }
 
+.enumlist{
+  @apply text-justify
+}
+
 .enumlist-container{
-  @apply flex flex-col w-[60%] h-full absolute -top-[20%] translate-x-80
+  @apply flex flex-col w-[60%] h-full absolute -top-[20%] translate-x-[25vw] 
 }
 
 .orande-circle{
@@ -218,7 +211,7 @@ h2, .swiper-slide h2 {
 }
 
 .orange-circle-striped{
-@apply h-[70%] w-[70%] absolute top-1/2 -translate-y-1/2 translate-x-10 opacity-20
+@apply h-[70%] w-[70%] absolute top-1/2 -translate-y-1/2 translate-x-10 opacity-80
 }
 
 .about{

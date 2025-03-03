@@ -76,37 +76,20 @@ const slides = ref([
               <img :src="slide.sliderImage" alt="slidePic" ref="sliderImages" class="slider-pics">
               <h2>{{ slide.heading }}</h2>
             </div>
-
-            <!--   
-              <div ref="sliderImages" class="slider-pics" :style="{
-              backgroundImage: `url('${slide.sliderImage}')`
-            }">
-  
-              <div class="first-element" :class="slide.elements[0].size"
-                :style="{ backgroundImage: `url('${slide.elements[0].image}')` }"></div>
-              <div class="second-element" :class="slide.elements[1].size"
-                :style="{ backgroundImage: `url('${slide.elements[1].image}')` }"></div>
-              <div class="third-element" :class="slide.elements[2].size"
-                :style="{ backgroundImage: `url('${slide.elements[2].image}')` }"></div> 
-                
-              </div>    
-                -->
-
-            <!-- <h1>{{ slide.heading }}</h1> -->
           </swiper-slide>
         </swiper-container>
       </div>
 
     </section>
     <section class="title">
-      <p><span class="font-krona text-[3vw]">Mi az </span><span class="font-bold text-[8vw]">E</span><span
-          class="font-bold text-[3vw]"> -sétakocsi?</span></p>
-      <p class="title-clip">ÉLMÉNYJÁRMŰ</p>
+      <p><span class="font-krona text-[5vw]">Mi az </span><span class="font-bold text-[8vw]">E</span><span
+          class="font-bold text-[5vw]"> -sétakocsi?</span></p>
+      <p class="title-striped">ÉLMÉNYJÁRMŰ</p>
     </section>
     <section class="enum">
       <div class="orange-decor-container">
         <div class="orande-circle">
-          <img src="/img/striped-ball.svg" alt="ball" class="orange-circle-striped">
+          <img src="/img/whiteStripedBall.svg" alt="ball" class="orange-circle-striped">
         </div>
 
       </div>
