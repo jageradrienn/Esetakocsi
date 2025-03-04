@@ -46,7 +46,10 @@ module.exports = {
         'marigo':'Marigo'
       },
 
-      
+      screens: {
+        'xxs': '325px',
+        '3xl':'1780px'
+      }
     },
   },
   plugins: [],

@@ -191,32 +191,31 @@ h2, .swiper-slide h2 {
 }
 
 .enum{
-  @apply h-[90vh] w-full flex justify-start mb-32 md:text-xl xl:text-2xl flex-shrink-0 relative
+  @apply h-[90vh] w-full mb-32 md:text-xl xl:text-2xl relative
 }
 
 .orange-decor-container{
-  @apply w-[100vw] -translate-x-16 relative
+  @apply w-[60%] -translate-x-10 relative
 }
 
-/*az sz elméletem, hogy az 100%-os viewport legyen, miközben kilóg majd az orange mellett. De talán a pozícionálás %-os értéke így korrketebb lesz,mert a teljes viewport szélességet veszi figyelembe és talán jobban megközelíti a megfelelő arányokat.*/
+.orande-circle{
+  @apply md:w-[50vh] md:h-[50vh] xl:w-[75vh] xl:h-[75vh] 2xl:w-[80vh] 2xl:h-[80vh] bg-Orange/10 rounded-full relative
+}
+
+.orange-circle-striped{
+@apply xl:h-[65%] xl:w-[65%] 2xl:h-[70%] 2xl:w-[70%] absolute top-1/2 -translate-y-1/2 translate-x-10 opacity-80
+}
+
 .enumlists{
-  @apply w-[100vw] h-full  
+  @apply w-[80%] h-full xl:translate-x-[30vw] 2xl:translate-x-[31vw] 3xl:translate-x-[30vw] xl:-translate-y-[85%] 2xl:-translate-y-[90%] outline outline-purple-600
 }
 
 .enumlist-container{
-  @apply flex flex-col w-[60%] h-full absolute -top-[20%] lg:-translate-x-[20%] xl:-translate-x-[40%] 
+  @apply flex flex-col w-full h-full relative -top-[20%]  
 }
 
 .enumlist-items{
   @apply text-justify
-}
-
-.orande-circle{
-  @apply md:w-[100vh] md:h-[100vh] xl:w-[80vh] xl:h-[80vh] bg-Orange/10 rounded-full relative
-}
-
-.orange-circle-striped{
-@apply h-[70%] w-[70%] absolute top-1/2 -translate-y-1/2 translate-x-10 opacity-80
 }
 
 .about{

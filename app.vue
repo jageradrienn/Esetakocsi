@@ -8,7 +8,7 @@ import Avatar from './components/Avatar.vue';
   <div>
     <NuxtLayout class="container">
       <header class="header">
-        <Avatar class="gap-1" :avatarDirection=true avatarImg="/icons/logo.svg" avatarImgSize="calc(100vw/25)"
+        <Avatar class="gap-1" :avatarDirection=true avatarImg="/icons/logo.svg" avatarImgSize="h-[4.5vh]"
           avatarLabel="Esetakocsi" />
         <nav>
           <ul class="menu">

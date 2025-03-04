@@ -11,12 +11,12 @@ const props = defineProps({
 
 <template>
     <div v-if="avatarDirection" class="avatar">
-        <NuxtImg :src="avatarImg" :style="{ height: avatarImgSize }" />
+        <NuxtImg :src="avatarImg" :class="avatarImgSize" />
         <div>{{ avatarLabel }}</div>
     </div>
     <div v-else class="avatar">
         <div>{{ avatarLabel }}</div>
-        <NuxtImg :src="avatarImg" :style="{ height: avatarImgSize }" />
+        <NuxtImg :src="avatarImg" :class="avatarImgSize" />
     </div>
 </template>
 
