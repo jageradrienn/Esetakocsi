@@ -45,6 +45,8 @@ module.exports = {
         'stripes': "Stripes",
         'marigo':'Marigo'
       },
+
+      
     },
   },
   plugins: [],
