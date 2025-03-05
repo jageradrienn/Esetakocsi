@@ -191,23 +191,23 @@ h2, .swiper-slide h2 {
 }
 
 .enum{
-  @apply h-[90vh] w-full mb-32 md:text-xl xl:text-2xl relative
+  @apply h-[90vh] w-full mb-32 md:text-lg xl:text-2xl relative md:max-xl:flex 
 }
 
 .orange-decor-container{
-  @apply w-[60%] -translate-x-10 relative
+  @apply  md:w-[30%] xl:w-[60%] -translate-x-10 relative
 }
 
 .orande-circle{
-  @apply md:w-[50vh] md:h-[50vh] xl:w-[75vh] xl:h-[75vh] 2xl:w-[80vh] 2xl:h-[80vh] bg-Orange/10 rounded-full relative
+  @apply md:w-[40vw] md:h-[40vw] xl:w-[75vh] xl:h-[75vh] 2xl:w-[80vh] 2xl:h-[80vh] bg-Orange/10 rounded-full relative
 }
 
 .orange-circle-striped{
-@apply xl:h-[65%] xl:w-[65%] 2xl:h-[70%] 2xl:w-[70%] absolute top-1/2 -translate-y-1/2 translate-x-10 opacity-80
+@apply lg:h-[65%] lg:w-[65%] 2xl:h-[70%] 2xl:w-[70%] absolute top-1/2 -translate-y-1/2 translate-x-10 opacity-80
 }
 
 .enumlists{
-  @apply w-[80%] h-full xl:translate-x-[30vw] 2xl:translate-x-[31vw] 3xl:translate-x-[30vw] xl:-translate-y-[85%] 2xl:-translate-y-[90%] outline outline-purple-600
+  @apply md:w-[60%] xl:w-[80%] h-full md:translate-x-[5vw] md:translate-y-[4vw] xl:translate-x-[30vw] 2xl:translate-x-[31vw] 3xl:translate-x-[25vw] xl:-translate-y-[85%] 2xl:-translate-y-[90%] 
 }
 
 .enumlist-container{
