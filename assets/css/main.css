@@ -161,7 +161,7 @@ h1{
   @apply w-full font-marigo text-center text-[5vw] sm:text-[6.8vw] lg:text-[5vw] text-DarkOlive mt-3 sm:-mt-[0.5vw]
 }
 
-h2, .swiper-slide h2 {
+.swiper-slide h2 {
   visibility: hidden;
 }
 
@@ -194,11 +194,21 @@ h2, .swiper-slide h2 {
 }
 
 .enum{
-  @apply h-[80vh] sm:h-[30vh] lg:h-[90vh] w-full mb-32 md:text-[1.5vw] relative md-xl:flex mt-10
+  @apply h-[80vh] sm:h-[30vh] lg:h-[90vh] w-full sm:mb-32 xxs-xs-mini:text-[3.7vw] sm:text-[1.5vw] relative md-xl:flex sm:mt-10
 }
 
 .orange-circle{
-  @apply sm:bg-none md:bg-Orange/10 rounded-full w-[30vw] h-[30vw] absolute top-1/2 -translate-y-1/2 -translate-x-10 flex flex-col items-center sm:block
+  @apply bg-none sm:bg-Orange/10 sm:rounded-full sm:w-[30vw] sm:h-[30vw] sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:-translate-x-10 flex flex-col gap-8 translate-x-10 sm:block
+}
+
+.orange-circle::before{
+  content:'';
+  @apply bg-Orange/10 rounded-full w-full h-[100vw] translate-x-10 -translate-y-12  absolute sm:hidden
+}
+
+.orange-circle::after{
+  content:'';
+  @apply bg-Orange/10 rounded-full w-full h-[100vw] -translate-x-14 translate-y-[40vh] absolute sm:hidden
 }
 
 .orange-circle-striped{
@@ -210,23 +220,23 @@ h2, .swiper-slide h2 {
 }
 
 .about{
-  @apply py-16 px-8 flex justify-start items-start gap-10 w-full h-[70vh]
+  @apply py-16 px-8 flex flex-col sm:flex-row justify-start items-start gap-10 w-full h-[70vh] xxs:mt-40 xs:mt-24
 }
 
 .about h2{
-  @apply font-krona text-[9vh]
+  @apply font-krona text-[4.5vh] sm:text-[9vh]
 }
 
 .about-article{
-@apply text-justify md:text-xl xl:text-2xl
+@apply text-justify sm:text-xl xl:text-2xl
 }
 
 .word-wrapper{
-  @apply flex justify-start gap-2 items-start w-[50%] flex-shrink-0
+  @apply flex justify-center sm:justify-start gap-2 items-start w-full sm:w-[50%] flex-shrink-0
 }
 
 .letter-wrapper{
-  @apply w-[47%] h-full -translate-y-20 flex flex-col items-center gap-4 flex-shrink-0
+  @apply w-[42%] sm:w-[47%] h-full -translate-y-20 flex flex-col items-center gap-4 flex-shrink-0 
 }
 
 .o-wrapper{
@@ -234,7 +244,7 @@ h2, .swiper-slide h2 {
 }
 
 .white-circle{
-  @apply w-[19vw] h-[19vw] bg-white rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 
+  @apply w-[30vw] h-[30vw] sm:w-[19vw] sm:h-[19vw] bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 
 }
 
 .arrow-wrapper{
@@ -242,7 +252,7 @@ h2, .swiper-slide h2 {
 }
 
 .arrows{
-@apply w-[15vh] h-[10vh] flex justify-end items-center relative
+@apply w-[10vh] h-[1vh] sm:w-[15vh] sm:h-[10vh] mt-5 sm:mt-0 flex justify-end items-center relative
 }
 
 .arrows :first-child{

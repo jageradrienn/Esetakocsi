@@ -48,7 +48,9 @@ module.exports = {
 
       screens: {
         'xxs': '325px',
+        'xs':'400px',
         '3xl': '1780px',
+        'xxs-xs-mini':{raw:'(min-width: 325px) and (max-width: 400px) and (max-height:800px)'},
         'md-lg-portrait': { raw: '(min-width: 768px) and (max-width: 1023px) and (orientation: portrait)' },
         'md-lg-landscape': { raw: '(min-width: 768px) and (max-width: 1023px) and (orientation: landscape)' },
         'md-xl':{raw:'(min-width: 768px) and (max-width: 1279px)'},
