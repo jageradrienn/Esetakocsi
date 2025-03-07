@@ -194,23 +194,23 @@ h2, .swiper-slide h2 {
 }
 
 .enum{
-  @apply h-[30vh] lg:h-[90vh] w-full mb-32 md:text-[1.5vw] relative md-xl:flex 
+  @apply h-[80vh] sm:h-[30vh] lg:h-[90vh] w-full mb-32 md:text-[1.5vw] relative md-xl:flex mt-10
 }
 
 .orange-circle{
-  @apply bg-Orange/10 rounded-full w-[30vw] h-[30vw] absolute top-1/2 -translate-y-1/2 -translate-x-10
+  @apply sm:bg-none md:bg-Orange/10 rounded-full w-[30vw] h-[30vw] absolute top-1/2 -translate-y-1/2 -translate-x-10 flex flex-col items-center sm:block
 }
 
 .orange-circle-striped{
-@apply md:h-[65%] md:w-[65%] lg:h-[66%] lg:w-[66%] 2xl:h-[70%] 2xl:w-[70%] absolute top-1/2 -translate-y-1/2 translate-x-10 opacity-80
+@apply md:h-[65%] md:w-[65%] lg:h-[66%] lg:w-[66%] 2xl:h-[70%] 2xl:w-[70%] absolute top-1/2 -translate-y-1/2 translate-x-10 opacity-80 hidden md:block
 }
 
 .enumlist-items{
-  @apply text-justify gap-8
+  @apply text-justify break-words hyphens-auto gap-4 sm:gap-8
 }
 
 .about{
-  @apply py-16 px-8 flex justify-start items-start gap-10 w-full h-[70vh] 
+  @apply py-16 px-8 flex justify-start items-start gap-10 w-full h-[70vh]
 }
 
 .about h2{

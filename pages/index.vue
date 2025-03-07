@@ -91,24 +91,28 @@ const slides = ref([
       <div class="orange-circle">
         <img src="/img/whiteStripedBall.svg" alt="ball" class="orange-circle-striped">
 
-        <Avatar class="enumlist-items w-[82vw] translate-x-[18%] -translate-y-[85%]" :avatarDirection=true
-          avatarImg="img/playground.svg" avatarImgSize="h-[12vw]"
+        <Avatar class="enumlist-items w-[80vw] sm:w-[82vw] translate-x-[18%] -translate-y-[240%]" :avatarDirection=true
+          avatarImg="img/playground.svg" avatarImgSize="h-[20vw] sm:h-[12vw]"
           avatarLabel="Játékos feladatokkal, ügyességi versenyekkel, szórakoztató kihívásokkal színesíti meg a gyermektáborok, fiatal közösségek, gyermek- és családi rendezvények programjait." />
 
-        <Avatar class="enumlist-items w-[72vw] translate-x-[34.5%] -translate-y-[125%]" :avatarDirection=true
-          avatarImg="img/city2.svg" avatarImgSize="h-[10.5vw]"
+        <Avatar
+          class="enumlist-items w-[80vw] sm:w-[72vw] translate-x-[18%] -translate-y-[220%] sm:translate-x-[34.5%] sm:-translate-y-[125%]"
+          :avatarDirection=true avatarImg="img/city2.svg" avatarImgSize="h-[20vw] sm:h-[10.5vw]"
           avatarLabel="Egyedibb megjelenéssel és élménnyel gazdagított városnézést is lehetővé tesz. Adott idő alatt több látnivaló meglátogatása, kényelem és praktikusság jellemzi." />
 
-        <Avatar class="enumlist-items w-[69vw] translate-x-[40%] -translate-y-[140%]" :avatarDirection=true
-          avatarImg="img/forest.svg" avatarImgSize="h-[9vw]"
+        <Avatar
+          class="enumlist-items w-[80vw] sm:w-[69vw] translate-x-[18%] -translate-y-[240%] sm:translate-x-[40%] sm:-translate-y-[140%]"
+          :avatarDirection=true avatarImg="img/forest.svg" avatarImgSize="h-[20vw] sm:h-[9vw]"
           avatarLabel="Túrázáshoz, kiránduláshoz is használható, pl a távolság megnövelésére, kalandos utazássá varázsolva a természetjárást. " />
 
-        <Avatar class="enumlist-items w-[72vw] translate-x-[34.5%] -translate-y-[153%]" :avatarDirection=true
-          avatarImg="img/fireplace.svg" avatarImgSize="h-[8vw]"
+        <Avatar
+          class="enumlist-items w-[80vw] sm:w-[72vw] translate-x-[18%] -translate-y-[220%] sm:translate-x-[34.5%] sm:-translate-y-[153%]"
+          :avatarDirection=true avatarImg="img/fireplace.svg" avatarImgSize="h-[20vw] sm:h-[8vw]"
           avatarLabel="Csapatépítő tréningek, születésnapi partik, baráti összejövetelek, leány- és legénybúcsúk vidámságot, közös élményt nyújtó segítője.." />
 
-        <Avatar class="enumlist-items w-[82vw] translate-x-[24%] -translate-y-[195%]" :avatarDirection=true
-          avatarImg="img/arboretum.svg" avatarImgSize="h-[7vw]"
+        <Avatar
+          class="enumlist-items w-[80vw] sm:w-[82vw] translate-x-[18%] -translate-y-[280%] sm:translate-x-[24%] sm:-translate-y-[195%]"
+          :avatarDirection=true avatarImg="img/arboretum.svg" avatarImgSize="h-[20vw] sm:h-[7vw]"
           avatarLabel="Arborétumok, parkok, sétányok, ligetek békés, csendes suhanója." />
       </div>
     </section>

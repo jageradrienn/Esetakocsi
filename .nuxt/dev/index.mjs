@@ -183,7 +183,7 @@ const _QQkWsU3K1j = (function(nitro) {
 
 const rootDir = "C:/work/Kicsikocsik/Esetakocsik";
 
-const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"OnePage website with Nuxt.js"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"}],"style":[],"script":[],"noscript":[],"title":"OnePage Website"};
+const appHead = {"meta":[{"charset":"utf-8"},{"name":"viewport","content":"width=device-width, initial-scale=1"},{"name":"description","content":"OnePage website with Nuxt.js"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico"}],"style":[],"script":[],"noscript":[],"title":"OnePage Website","htmlAttrs":{"lang":"hu"}};
 
 const appRootTag = "div";
 
