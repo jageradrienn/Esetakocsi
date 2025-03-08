@@ -52,8 +52,9 @@ module.exports = {
         '3xl': '1780px',
         'xxs-xs-mini':{raw:'(min-width: 325px) and (max-width: 400px) and (max-height:800px)'},
         'md-lg-portrait': { raw: '(min-width: 768px) and (max-width: 1023px) and (orientation: portrait)' },
-        'md-lg-landscape': { raw: '(min-width: 768px) and (max-width: 1023px) and (orientation: landscape)' },
-        'md-xl':{raw:'(min-width: 768px) and (max-width: 1279px)'},
+        'md-lg-landscape': { raw: '(min-width: 768px) and (max-width: 1024px) and (orientation: landscape)' },
+        'md-xl': { raw: '(min-width: 768px) and (max-width: 1279px)' },
+        'xl-2xl':{raw:'(min-width: 1280px) and (max-width: 1535px)'}
       }
     },
   },

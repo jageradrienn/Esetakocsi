@@ -194,7 +194,7 @@ h1{
 }
 
 .enum{
-  @apply h-[80vh] sm:h-[30vh] lg:h-[90vh] w-full sm:mb-32 xxs-xs-mini:text-[3.7vw] sm:text-[1.5vw] relative md-xl:flex sm:mt-10
+  @apply h-[80vh] sm:h-[40vh] md-lg-portrait:h-[40vh] lg:h-[50vh] xl:h-[70vh] w-full xxs-xs-mini:text-[3.7vw] sm:text-[1.5vw] relative md-xl:flex sm:mt-10 sm:mb-32 md:mb-16
 }
 
 .orange-circle{
@@ -203,12 +203,12 @@ h1{
 
 .orange-circle::before{
   content:'';
-  @apply bg-Orange/10 rounded-full w-full h-[100vw] translate-x-10 -translate-y-12  absolute sm:hidden
+  @apply bg-Orange/10 rounded-full xxs:w-[100vw] xxs:h-[100vw] xs:w-[95vw] xs:h-[95vw] translate-x-10 -translate-y-8  absolute sm:hidden
 }
 
 .orange-circle::after{
   content:'';
-  @apply bg-Orange/10 rounded-full w-full h-[100vw] -translate-x-14 translate-y-[40vh] absolute sm:hidden
+  @apply bg-Orange/10 rounded-full xxs:w-[100vw] xxs:h-[100vw] xs:w-[95vw] xs:h-[95vw]  -translate-x-14 translate-y-[40vh] absolute sm:hidden
 }
 
 .orange-circle-striped{
@@ -220,7 +220,7 @@ h1{
 }
 
 .about{
-  @apply py-16 px-8 flex flex-col sm:flex-row justify-start items-start gap-10 w-full h-[70vh] xxs:mt-40 xs:mt-24
+  @apply py-16 px-8 flex flex-col xl:flex-row gap-0 justify-start items-start xl:gap-[25%] 2xl:gap-10 3xl:gap-0 w-full h-[70vh] xxs:mt-28 xs:mt-10 
 }
 
 .about h2{
@@ -232,11 +232,11 @@ h1{
 }
 
 .word-wrapper{
-  @apply flex justify-center sm:justify-start gap-2 items-start w-full sm:w-[50%] flex-shrink-0
+  @apply flex justify-center sm:justify-start gap-2 items-start w-full sm:w-[50%] xl-2xl:w-[30%] flex-shrink-0
 }
 
 .letter-wrapper{
-  @apply w-[42%] sm:w-[47%] h-full -translate-y-20 flex flex-col items-center gap-4 flex-shrink-0 
+  @apply w-[42%] sm:w-[47%] xl-2xl:w-[60%] h-full -translate-y-14 2xl:-translate-y-28 flex flex-col items-center gap-4 flex-shrink-0 
 }
 
 .o-wrapper{
@@ -244,23 +244,23 @@ h1{
 }
 
 .white-circle{
-  @apply w-[30vw] h-[30vw] sm:w-[19vw] sm:h-[19vw] bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 
+  @apply w-[80%] h-[80%] bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 
 }
 
 .arrow-wrapper{
-  @apply flex flex-col items-end gap-4
+  @apply flex flex-col items-end
 }
 
 .arrows{
-@apply w-[10vh] h-[1vh] sm:w-[15vh] sm:h-[10vh] mt-5 sm:mt-0 flex justify-end items-center relative
+@apply w-[16vh] h-[4vh] sm:w-[15vh] sm:h-[10vh] mt-5 sm:mt-0 flex justify-end items-center relative
 }
 
 .arrows :first-child{
 clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
-  @apply w-[50%] h-[10vh] bg-Orange translate-x-4 border-2 absolute -right-2
+  @apply w-[5vh] h-[5vh] sm:w-[50%] sm:h-[10vh] bg-Orange translate-x-4 border-2 absolute right-1 md-lg-landscape:right-1 md-lg-portrait:-right-6 md:-right-2 2xl:-right-4
 }
 
 .arrows :last-child{
 clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
-  @apply w-[50%] h-[10vh] bg-black/50 border-2 absolute right-4
+  @apply w-[5vh] h-[5vh] sm:w-[50%] sm:h-[10vh] bg-black/50 border-2 absolute right-4
 }
