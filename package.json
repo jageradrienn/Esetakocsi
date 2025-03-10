@@ -12,6 +12,7 @@
   "dependencies": {
     "@motionone/vue": "^10.16.4",
     "@nuxt/image": "^1.9.0",
+    "consola": "^3.4.0",
     "motion": "^12.3.1",
     "nuxt": "^3.15.0",
     "nuxt-swiper": "^2.0.0",
