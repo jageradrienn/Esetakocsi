@@ -10,7 +10,7 @@ register();
 
 const slides = ref([
   {
-    sliderImage: 'img/cleverchair.svg',
+    sliderImage: 'img/cleverchair.webp',
     heading: "Ügyeskocsik",
     elements: [
       { EID: '0', class: 'first-element', image: 'icons/clock.svg', size: 'w-[27%] h-[27%]' },
@@ -19,7 +19,7 @@ const slides = ref([
     ]
   },
   {
-    sliderImage: 'img/citychair.svg',
+    sliderImage: 'img/citychair.webp',
     heading: "Városikocsik",
     elements: [
       { EID: '0', class: 'first-element', image: 'icons/sunglasses.svg', size: 'w-[30%] h-[30%]' },
@@ -28,7 +28,7 @@ const slides = ref([
     ]
   },
   {
-    sliderImage: 'img/tripchair.svg',
+    sliderImage: 'img/tripchair.webp',
     heading: "Túrakocsik",
     elements: [
       { EID: '0', class: 'first-element', image: 'icons/mineral.svg', size: 'w-[35%] h-[35%]' },
@@ -37,7 +37,7 @@ const slides = ref([
     ]
   },
   {
-    sliderImage: 'img/partychair.svg',
+    sliderImage: 'img/partychair.webp',
     heading: "Bulikocsik",
     elements: [
       { EID: '0', class: 'first-element', image: 'icons/speaker.svg', size: 'w-[35%] h-[35%]' },
@@ -46,7 +46,7 @@ const slides = ref([
     ]
   },
   {
-    sliderImage: 'img/walkingchair.svg',
+    sliderImage: 'img/walkingchair.webp',
     heading: "Sétakocsik",
     elements: [
       { EID: '0', class: 'first-element', image: 'icons/flowers.svg', size: 'w-[35%] h-[35%]' },
@@ -91,22 +91,22 @@ const slides = ref([
 
     <section class="enum">
       <div class="orange-circle">
-        <img src="/img/whiteStripedBall.svg" alt="ball" class="orange-circle-striped">
+        <img src="/img/whiteStripedBall.webp" alt="ball" class="orange-circle-striped">
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[82vw] sm:translate-x-[18%] sm:-translate-y-[85%]"
-          :avatarDirection=true avatarImg="img/playground.svg" avatarImgSize="h-[20vw] sm:h-[12vw]"
+          :avatarDirection=true avatarImg="img/playground.webp" avatarImgSize="h-[20vw] sm:h-[12vw]"
           avatarLabel="Játékos feladatokkal, ügyességi versenyekkel, szórakoztató kihívásokkal színesíti meg a gyermektáborok, fiatal közösségek, gyermek- és családi rendezvények programjait." />
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[72vw] sm:translate-x-[34.5%] sm:-translate-y-[125%]"
-          :avatarDirection=true avatarImg="img/city2.svg" avatarImgSize="h-[20vw] sm:h-[10.5vw]"
+          :avatarDirection=true avatarImg="img/city2.webp" avatarImgSize="h-[20vw] sm:h-[10.5vw]"
           avatarLabel="Egyedibb megjelenéssel és élménnyel gazdagított városnézést is lehetővé tesz. Adott idő alatt több látnivaló meglátogatása, kényelem és praktikusság jellemzi." />
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[69vw] sm:translate-x-[40%] sm:-translate-y-[140%]"
-          :avatarDirection=true avatarImg="img/forest.svg" avatarImgSize="h-[20vw] sm:h-[9vw]"
+          :avatarDirection=true avatarImg="img/forest.webp" avatarImgSize="h-[20vw] sm:h-[9vw]"
           avatarLabel="Túrázáshoz, kiránduláshoz is használható, pl a távolság megnövelésére, kalandos utazássá varázsolva a természetjárást. " />
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[72vw] sm:translate-x-[34.5%] sm:-translate-y-[153%]"
-          :avatarDirection=true avatarImg="img/fireplace.svg" avatarImgSize="h-[20vw] sm:h-[8vw]"
+          :avatarDirection=true avatarImg="img/fireplace.webp" avatarImgSize="h-[20vw] sm:h-[8vw]"
           avatarLabel="Csapatépítő tréningek, születésnapi partik, baráti összejövetelek, leány- és legénybúcsúk vidámságot, közös élményt nyújtó segítője.." />
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[82vw] sm:translate-x-[24%] sm:-translate-y-[195%]"
