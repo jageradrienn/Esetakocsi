@@ -7,7 +7,7 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+   "postinstall": "nuxt prepare && ls -la node_modules/consola/dist/shared"
   },
   "dependencies": {
     "@motionone/vue": "^10.16.4",
