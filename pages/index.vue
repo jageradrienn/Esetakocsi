@@ -56,6 +56,15 @@ const slides = ref([
   }
 ]);
 
+const windowWidth = ref(window.innerWidth);
+const isClose = ref(false);
+
+onMounted(
+  windowWidth = window.innerWidth
+);
+
+
+
 </script>
 
 <template>

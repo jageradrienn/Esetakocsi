@@ -86,12 +86,6 @@
       "public/*": [
         "../public/*"
       ],
-      "#build": [
-        "."
-      ],
-      "#build/*": [
-        "./*"
-      ],
       "#app": [
         "../node_modules/nuxt/dist/app"
       ],
@@ -110,14 +104,23 @@
       "#vue-router": [
         "../node_modules/vue-router"
       ],
+      "#unhead/composables": [
+        "../node_modules/nuxt/dist/head/runtime/composables/v3"
+      ],
       "#imports": [
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/dev"
+        "./manifest/meta/3bdded6c-65ca-464e-a3fe-83c02e5f0ca5"
       ],
       "#components": [
         "./components"
+      ],
+      "#build": [
+        "."
+      ],
+      "#build/*": [
+        "./*"
       ]
     },
     "esModuleInterop": true,
