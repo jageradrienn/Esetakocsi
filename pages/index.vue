@@ -56,10 +56,6 @@ const slides = ref([
   }
 ]);
 
-const windowWidth = ref(window.innerWidth);
-const isClose = ref(false);
-
-
 
 
 </script>
