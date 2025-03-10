@@ -32,4 +32,7 @@ export default defineNuxtConfig({
 
   compatibilityDate: '2025-01-10',
   modules: ['@nuxt/image', 'nuxt-swiper'],
+  build: {
+    transpile: ['consola'], // Biztosítja, hogy a consola csomagot a Nuxt fordítsa le
+  },
 })
