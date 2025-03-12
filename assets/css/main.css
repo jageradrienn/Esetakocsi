@@ -238,17 +238,17 @@ h1{
 }
 
 .arrows{
-@apply w-[10vh] h-[4vh] sm:w-[15vh] sm:h-[10vh] mt-5 sm:mt-0 flex justify-end items-center relative
+@apply w-full mt-5 sm:mt-0 flex justify-end items-center relative
 }
 
  .arrows :first-child{
 clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
-  @apply w-[5vh] h-[5vh] sm:w-[50%] sm:h-[10vh] bg-Orange translate-x-4 border-2 absolute right-1 md-lg-landscape:right-1 md-lg-portrait:-right-6 md:-right-2 2xl:-right-4
+  @apply w-[5vh] h-[5vh] sm:scale-125 lg:scale-150 2xl:scale-[200%] bg-Orange sm:translate-y-12 border-2 absolute 
 }
 
  .arrows :last-child{
 clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
-  @apply w-[5vh] h-[5vh] sm:w-[50%] sm:h-[10vh] bg-black/50 border-2 absolute right-4
+  @apply w-[5vh] h-[5vh] sm:scale-125 lg:scale-150 2xl:scale-[200%] bg-black/40 border-2 absolute sm:translate-y-12 right-12 2xl:right-20
 }
 
 .mission{

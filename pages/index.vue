@@ -95,12 +95,12 @@ const slides = ref([
         <div class="wordwrapper flex justify-start gap-2 items-start w-full h-full">
           <h2 class="font-krona text-[12vw] sm:text-[6.5vw]">R</h2>
           <div
-            class="letterwrapper w-[30%] h-full -translate-y-2 2xl:-translate-y-2 flex flex-col items-center gap-4 flex-shrink-0 ">
+            class="letterwrapper w-[30%] h-[50%] sm:h-[40%] lg:h-[60%] 2xl:h-full -translate-y-2 2xl:-translate-y-14 flex flex-col items-center gap-1 lg:gap-4 flex-shrink-0 ">
             <img src="/public/icons/caret.svg" alt="about" class="w-[30%]">
             <div class="owrapper w-full h-full relative ">
               <img src="/public/icons/striped-circle.svg" alt="about" class="w-full h-full">
               <div
-                class="creamcircle w-[12vw] h-[12vw] bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ">
+                class="creamcircle w-[17vw] h-[17vw]  bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ">
               </div>
             </div>
           </div>
