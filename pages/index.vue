@@ -12,47 +12,22 @@ const slides = ref([
   {
     sliderImage: 'img/cleverchair.webp',
     heading: "Ügyeskocsik",
-    elements: [
-      { EID: '0', class: 'first-element', image: 'icons/clock.svg', size: 'w-[27%] h-[27%]' },
-      { EID: '1', class: 'second-element', image: 'icons/whistle.svg', size: 'w-[25%] h-[25%]' },
-      { EID: '2', class: 'third-element', image: 'icons/trofee.svg', size: 'w-[37%] h-[37%]' }
-    ]
   },
   {
     sliderImage: 'img/citychair.webp',
     heading: "Városikocsik",
-    elements: [
-      { EID: '0', class: 'first-element', image: 'icons/sunglasses.svg', size: 'w-[30%] h-[30%]' },
-      { EID: '1', class: 'second-element', image: 'icons/camera.svg', size: 'w-[30%] h-[30%]' },
-      { EID: '2', class: 'third-element', image: 'icons/phonemap.svg', size: 'w-[30%] h-[30%]' }
-    ]
   },
   {
     sliderImage: 'img/tripchair.webp',
     heading: "Túrakocsik",
-    elements: [
-      { EID: '0', class: 'first-element', image: 'icons/mineral.svg', size: 'w-[35%] h-[35%]' },
-      { EID: '1', class: 'second-element', image: 'icons/fruits.svg', size: 'w-[23%] h-[23%]' },
-      { EID: '2', class: 'third-element', image: 'icons/bino.svg', size: 'w-[30%] h-[30%]' }
-    ]
   },
   {
     sliderImage: 'img/partychair.webp',
     heading: "Bulikocsik",
-    elements: [
-      { EID: '0', class: 'first-element', image: 'icons/speaker.svg', size: 'w-[35%] h-[35%]' },
-      { EID: '1', class: 'second-element', image: 'icons/marshmallow.svg', size: 'w-[30%] h-[30%]' },
-      { EID: '2', class: 'third-element', image: 'icons/cooler.svg', size: 'w-[28%] h-[28%]' }
-    ]
   },
   {
     sliderImage: 'img/walkingchair.webp',
     heading: "Sétakocsik",
-    elements: [
-      { EID: '0', class: 'first-element', image: 'icons/flowers.svg', size: 'w-[35%] h-[35%]' },
-      { EID: '1', class: 'second-element', image: 'icons/flower1.svg', size: 'w-[32%] h-[32%]' },
-      { EID: '2', class: 'third-element', image: 'icons/greenleaves.svg', size: 'w-[43%] h-[43%]' }
-    ]
   }
 ]);
 
@@ -74,7 +49,7 @@ const slides = ref([
           preload-images="false" style="width:100vw; transition: transform 0.6s ease-in-out;">
           <swiper-slide v-for="(slide, index) in slides" :key="index">
             <div class="balls-wrapper">
-              <img src="/img/whiteStripedBall.svg" alt="ball" class="white-ball">
+              <img src="/img/whiteStripedBall.webp" alt="ball" class="white-ball">
               <img :src="slide.sliderImage" alt="slidePic" ref="sliderImages" class="slider-pics">
               <h2>{{ slide.heading }}</h2>
             </div>
@@ -107,11 +82,11 @@ const slides = ref([
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[72vw] sm:translate-x-[34.5%] sm:-translate-y-[153%]"
           :avatarDirection=true avatarImg="img/fireplace.webp" avatarImgSize="h-[20vw] sm:h-[8vw]"
-          avatarLabel="Csapatépítő tréningek, születésnapi partik, baráti összejövetelek, leány- és legénybúcsúk vidámságot, közös élményt nyújtó segítője.." />
+          avatarLabel="Csapatépítő tréningek, születésnapi partik, baráti összejövetelek, fesztiválok, szabadtéri programok, leány- és legénybúcsúk vidámságot, közös élményt nyújtó segítője.." />
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[82vw] sm:translate-x-[24%] sm:-translate-y-[195%]"
-          :avatarDirection=true avatarImg="img/arboretum.svg" avatarImgSize="h-[20vw] sm:h-[7vw]"
-          avatarLabel="Arborétumok, parkok, sétányok, ligetek békés, csendes suhanója." />
+          :avatarDirection=true avatarImg="img/arboretum.webp" avatarImgSize="h-[20vw] sm:h-[7vw]"
+          avatarLabel="Arborétumok, skanzenek, parkok, sétányok, ligetek békés, csendes suhanója." />
       </div>
     </section>
 
@@ -119,14 +94,14 @@ const slides = ref([
       <div class="word-wrapper">
         <h2>R</h2>
         <div class="letter-wrapper">
-          <img src="/img/caret.svg" alt="about" class="w-[30%]">
+          <img src="/icons/caret.svg" alt="about" class="w-[30%]">
           <div class="o-wrapper">
-            <img src="/img/striped-circle.svg" alt="about">
-            <div class="white-circle"></div>
+            <img src="/icons/striped-circle.svg" alt="about">
+            <div class="cream-circle"></div>
           </div>
         </div>
         <div class="arrow-wrapper">
-          <h2 class="">LUNK</h2>
+          <h2>LUNK</h2>
           <div class="arrows">
             <div></div>
             <div></div>
@@ -134,23 +109,63 @@ const slides = ref([
         </div>
       </div>
       <article class="about-article">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget arcu scelerisque dolor ultricies egestas
-          vitae sed lacus. Morbi aliquet odio non sapien placerat, eget venenatis nisi consectetur. Curabitur faucibus
-          facilisis mollis.</p>
+        <p>Számunkra nagyon fontos érték az élmény, amellyel a mai rohanó világban kapcsolódhatunk másokhoz,
+          önmagunkhoz, a természethez, látnivalókhoz, vidámsághoz. Mi magunk is kerestük, kutattuk az új élményszerzési
+          lehetőségeket a mindennapjainkban. Mígnem érkezett hozzánk egy lehetőség, amelyből pár évnyi tervezéssel,
+          kutatással, tanulással és kreatív munkával megszülethetett az Esétakocsi. </p>
+        <br>
+        <p>Csapatunk azért hozta létre ezt a különleges
+          szolgáltatást, hogy a mozgás örömét és a felfedezés szabadságát mindenki számára elérhetővé tegye
+          Magyarországon egyedülálló módon. Tényleg NINCS MÁSODIK! Tényleg nincs más, ahol ezt az élményt megszerezhetik
+          az érdeklődők. Ezek az elektromos kiskocsik nemcsak egyedi megjelenésükkel, hanem sokoldalú
+          felhasználhatóságukkal is kitűnnek: gyerektáborok, családi túrák, városnéző kalandok, csapatépítők és piknikek
+          tökéletes kellékei. </p>
+        <br>
+        <p>Nagy örömmel és szeretettel várunk minden érdeklődőt a Esétakocsik bérlésével. Érdeklődés esetén keressenek
+          bizalommal elérhetőségeinken! </p>
       </article>
     </section>
 
 
     <section id="mission" class="mission">
-      <h2>Küldetésünk</h2>
-      <article>
-        <Avatar class="gap-16" :avatarDirection=true avatarImg="/img/ketten_clip.webp" avatarImgSize="calc(100vw/3)"
-          avatarLabel="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget arcu scelerisque dolor ultricies egestas vitae sed lacus. Morbi aliquet odio non sapien placerat, eget venenatis nisi consectetur. Curabitur faucibus facilisis mollis." />
+      <article class="mission-article">
+        <p>Fedezd fel a világot másképp! Elektromos élményjárműveinkkel a szórakozás, a természet és a városi
+          kalandok
+          új dimenzióját hozzuk el neked. Legyen szó gyerektáborokról, családi kirándulásokról, városnéző túrákról
+          vagy
+          izgalmas csapatépítőkről, velünk minden élmény gördülékenyebb! Strapabíró, bukócsöves, praktikus kis
+          járgányaink biztonságosak, kényelmesek és minden korosztálynak páratlan szabadságérzetet adnak. Célunk,
+          hogy
+          mindenki számára lehetővé tegyünk egy újfajta élményszerzést. Legyél akár egy kalandvágyó tini, vagy bulis
+          fiatal, vagy vidámságra vágyó család, vagy kényelemben élményt szerző idősebb korosztály!</p>
       </article>
-      <p>Tudj meg többet rólunk!</p>
+      <div class="word-wrapper">
+        <div class="arrow-wrapper">
+          <h2>KÜLDETÉS</h2>
+          <div class="arrows">
+            <div></div>
+            <div></div>
+          </div>
+
+        </div>
+        <div class="letter-wrapper">
+          <div class="w-[20vw] h-[10vh] flex gap-8 justify-center items-end">
+            <div class="w-[20%] h-[60%] bg-Orange rounded-full"></div>
+            <div class="w-[20%] h-[60%] bg-Orange rounded-full"></div>
+          </div>
+          <img src="/img/ULetter.webp" alt="mission">
+        </div>
+        <h2 class="">NK</h2>
+
+      </div>
+
+
     </section>
 
-    <section id="gallery" class="section">
+
+
+  </div>
+  <!--<section id="gallery" class="section">
       <h2>Galéria</h2>
       <p>Tekintsd meg galériánkat.</p>
     </section>
@@ -169,13 +184,7 @@ const slides = ref([
     <section id="contact" class="section">
       <h2>Kapcsolat</h2>
       <p>Elérhetőségeink és kapcsolatfelvétel.</p>
-    </section>
-  </div>
-
-
-
-
-
+    </section> -->
 </template>
 
 <style></style>

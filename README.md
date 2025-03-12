@@ -1,4 +1,4 @@
-
+ok
 ok
 # Nuxt Minimal Starter
 

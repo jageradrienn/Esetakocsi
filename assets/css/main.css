@@ -17,6 +17,10 @@ body {
   @apply m-0 p-0 overflow-x-hidden bg-Lime text-SmokeBlack
 }
 
+body p{
+  @apply break-words hyphens-auto
+}
+
 .container {
   @apply flex flex-col gap-0 items-center w-full
 }
@@ -216,22 +220,29 @@ h1{
 }
 
 .enumlist-items{
-  @apply text-justify break-words hyphens-auto gap-4 sm:gap-8
+  @apply text-justify gap-4 sm:gap-8
 }
 
 .about{
-  @apply py-16 px-8 flex flex-col xl:flex-row gap-0 justify-start items-start xl:gap-[25%] 2xl:gap-10 3xl:gap-0 w-full h-[70vh] xxs:mt-28 xs:mt-10 
+  @apply py-16 px-8 flex flex-col xl:flex-row gap-0 justify-start items-start xl:gap-[25%] 2xl:gap-10 3xl:gap-0 w-full h-[70vh] xxs:mt-28 xs:mt-20 
 }
 
-.about h2{
+.about h2, .mission h2{
   @apply font-krona text-[4.5vh] sm:text-[9vh]
 }
 
-.about-article{
-@apply text-justify sm:text-xl xl:text-2xl
+.about-article p, .mission-article p{
+  line-height:3rem !important;
+@apply text-justify sm:text-xl xl:text-[1.5rem]
 }
 
-.word-wrapper{
+@media (min-width:325px) and (max-width:1024px){
+  .about-article p, .mission-article p{
+    line-height:2rem !important;
+  }
+}
+
+.about .word-wrapper{
   @apply flex justify-center sm:justify-start gap-2 items-start w-full sm:w-[50%] xl-2xl:w-[30%] flex-shrink-0
 }
 
@@ -243,11 +254,11 @@ h1{
   @apply relative 
 }
 
-.white-circle{
+.cream-circle{
   @apply w-[80%] h-[80%] bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 
 }
 
-.arrow-wrapper{
+.about .arrow-wrapper{
   @apply flex flex-col items-end
 }
 
@@ -255,12 +266,42 @@ h1{
 @apply w-[16vh] h-[4vh] sm:w-[15vh] sm:h-[10vh] mt-5 sm:mt-0 flex justify-end items-center relative
 }
 
-.arrows :first-child{
+.about .arrows :first-child{
 clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
   @apply w-[5vh] h-[5vh] sm:w-[50%] sm:h-[10vh] bg-Orange translate-x-4 border-2 absolute right-1 md-lg-landscape:right-1 md-lg-portrait:-right-6 md:-right-2 2xl:-right-4
 }
 
-.arrows :last-child{
+.about .arrows :last-child{
 clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
   @apply w-[5vh] h-[5vh] sm:w-[50%] sm:h-[10vh] bg-black/50 border-2 absolute right-4
+}
+
+.mission{
+    @apply py-16 px-8 flex flex-col xl:flex-row gap-0 justify-around items-start w-full h-[70vh] xxs:mt-28 xs:mt-20 relative
+}
+
+.mission-article{
+  @apply absolute top-[30%] left-10 w-[52%]
+}
+
+.mission .arrows :first-child {
+  clip-path: polygon(100% 0, 26% 50%, 100% 100%, 100% 70%, 71% 50%, 100% 30%);
+  @apply w-[5vh] h-[5vh] sm:w-[50%] sm:h-[10vh] bg-Orange -translate-x-4 border-2 absolute left-1 md-lg-landscape:left-1 md-lg-portrait:-left-6 md:-left-2 2xl:-left-4;
+}
+
+.mission .arrows :last-child {
+  clip-path: polygon(100% 0, 26% 50%, 100% 100%, 100% 70%, 71% 50%, 100% 30%);
+  @apply w-[5vh] h-[5vh] sm:w-[50%] sm:h-[10vh] bg-black/50 border-2 absolute left-4;
+}
+
+.mission .arrow-wrapper{
+  @apply flex flex-col items-end w-full
+}
+
+.mission .letter-wrapper{
+  @apply w-[42%] sm:w-[47%] xl-2xl:w-[60%] h-full -translate-y-14 2xl:-translate-y-28 flex flex-col items-center gap-4 flex-shrink-0 
+}
+
+.mission .word-wrapper{
+  @apply flex justify-center sm:justify-start gap-2 items-start w-full sm:w-[50%] xl-2xl:w-[30%] flex-shrink-0 absolute right-[24rem] 
 }
