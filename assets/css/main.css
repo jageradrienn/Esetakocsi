@@ -139,18 +139,6 @@ background: linear-gradient(180deg, #c8cec3 0%, #E6EFDF 44.1%, #FAFEF6 100%);
     transform: translateY(-22vw) !important;
 }
 }
-/*
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-  .swiper-slide-active{
-    transform: scale(1.45) translateX(2.5rem) translateY(-5vh) !important;
-}
-}
-
-@media (min-width: 1025px){
-  .swiper-slide-active{
-    transform: scale(1.45) translateX(2.5rem) translateY(-6.5vw) !important;
-}
-} */
 
 .swiper-slide-next{
   @apply translate-x-16
@@ -179,19 +167,6 @@ h1{
 .title{
 @apply flex flex-col items-center justify-between w-full h-[40vw] pt-[2vw] pr-[6vw] pb-[5.75vw] pl-[6vw] mb-10
 }
-
-/* .title-clip{
-  @apply text-[15vh] font-rubik relative text-transparent
-}
- 
-.title-clip::before {
-  content: "ÉLMÉNYJÁRMŰ";
-  background: url('img/elmenyjarmualap.svg') ; 
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  @apply absolute top-0 left-0 w-full h-full bg-no-repeat bg-center bg-cover bg-clip-text 
-}   
-*/
 
 .title-striped{
 @apply font-stripes text-[13vw]
@@ -280,6 +255,10 @@ clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
     @apply py-16 px-8 flex flex-col xl:flex-row gap-0 justify-around items-start w-full h-[70vh] xxs:mt-28 xs:mt-20 relative
 }
 
+.mission h2{
+  @apply font-krona text-[3.3vh] sm:text-[9vh]
+}
+
 .mission-article{
   @apply absolute top-[30%] left-10 w-[52%]
 }
@@ -299,9 +278,13 @@ clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
 }
 
 .mission .letter-wrapper{
-  @apply w-[42%] sm:w-[47%] xl-2xl:w-[60%] h-full -translate-y-14 2xl:-translate-y-28 flex flex-col items-center gap-4 flex-shrink-0 
+  @apply w-[25%] sm:w-[47%] xl-2xl:w-[60%] h-full -translate-y-14 2xl:-translate-y-28 flex flex-col items-center gap-4 flex-shrink-0 
 }
 
 .mission .word-wrapper{
-  @apply flex justify-center sm:justify-start gap-2 items-start w-full sm:w-[50%] xl-2xl:w-[30%] flex-shrink-0 absolute right-[24rem] 
+  @apply flex justify-center sm:justify-start gap-2 items-start w-full sm:w-[50%] xl-2xl:w-[30%] flex-shrink-0 absolute xxs:right-[1rem] xs:right-[.5rem] xl:right-[24rem] 
+}
+
+.mission .orange-dot{
+  @apply w-[30px] h-[30px] sm:w-[50px] sm:h-[50px] xl:w-[70px] xl:h-[70px] bg-Orange rounded-full
 }

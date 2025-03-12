@@ -150,8 +150,8 @@ const slides = ref([
         </div>
         <div class="letter-wrapper">
           <div class="w-[20vw] h-[10vh] flex gap-8 justify-center items-end">
-            <div class="w-[20%] h-[60%] bg-Orange rounded-full"></div>
-            <div class="w-[20%] h-[60%] bg-Orange rounded-full"></div>
+            <div class="orange-dot"></div>
+            <div class="orange-dot"></div>
           </div>
           <img src="/img/ULetter.webp" alt="mission">
         </div>
