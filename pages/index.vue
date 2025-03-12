@@ -90,7 +90,49 @@ const slides = ref([
       </div>
     </section>
 
-    <section id="about" class="about">
+    <section id="about" class="w-full h-[70vh] px-8 mt-20 sm:mt-10">
+      <div class="w-full sm:w-1/2 h-[25%] sm:h-[40%] bg-red-400" style="shape-outside:border-box; float:left">
+        <div class="wordwrapper flex justify-start gap-2 items-start w-full h-full">
+          <h2 class="font-krona text-[12vw] sm:text-[6.5vw]">R</h2>
+          <div
+            class="letterwrapper w-[30%] h-full -translate-y-2 2xl:-translate-y-2 flex flex-col items-center gap-4 flex-shrink-0 ">
+            <img src="/public/icons/caret.svg" alt="about" class="w-[30%]">
+            <div class="owrapper w-full h-full relative ">
+              <img src="/public/icons/striped-circle.svg" alt="about" class="w-full h-full">
+              <div
+                class="creamcircle w-[12vw] h-[12vw] bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ">
+              </div>
+            </div>
+          </div>
+          <div class="arrowwrapper flex flex-col items-end">
+            <h2 class="font-krona text-[12vw] sm:text-[6.5vw]">LUNK</h2>
+            <div class="arrows">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <article class="about-article">
+        <p>Számunkra nagyon fontos érték az élmény, amellyel a mai rohanó világban kapcsolódhatunk másokhoz,
+          önmagunkhoz, a természethez, látnivalókhoz, vidámsághoz. Mi magunk is kerestük, kutattuk az új élményszerzési
+          lehetőségeket a mindennapjainkban. Mígnem érkezett hozzánk egy lehetőség, amelyből pár évnyi tervezéssel,
+          kutatással, tanulással és kreatív munkával megszülethetett az Esétakocsi. </p>
+        <br>
+        <p>Csapatunk azért hozta létre ezt a különleges
+          szolgáltatást, hogy a mozgás örömét és a felfedezés szabadságát mindenki számára elérhetővé tegye
+          Magyarországon egyedülálló módon. Tényleg NINCS MÁSODIK! Tényleg nincs más, ahol ezt az élményt megszerezhetik
+          az érdeklődők. Ezek az elektromos kiskocsik nemcsak egyedi megjelenésükkel, hanem sokoldalú
+          felhasználhatóságukkal is kitűnnek: gyerektáborok, családi túrák, városnéző kalandok, csapatépítők és piknikek
+          tökéletes kellékei. </p>
+        <br>
+        <p>Nagy örömmel és szeretettel várunk minden érdeklődőt a Esétakocsik bérlésével. Érdeklődés esetén keressenek
+          bizalommal elérhetőségeinken! </p>
+      </article>
+    </section>
+
+
+    <!-- <section id="about" class="about">
       <div class="word-wrapper">
         <h2>R</h2>
         <div class="letter-wrapper">
@@ -160,7 +202,7 @@ const slides = ref([
       </div>
 
 
-    </section>
+    </section> -->
 
 
 

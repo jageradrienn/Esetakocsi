@@ -238,15 +238,15 @@ h1{
 }
 
 .arrows{
-@apply w-[16vh] h-[4vh] sm:w-[15vh] sm:h-[10vh] mt-5 sm:mt-0 flex justify-end items-center relative
+@apply w-[10vh] h-[4vh] sm:w-[15vh] sm:h-[10vh] mt-5 sm:mt-0 flex justify-end items-center relative
 }
 
-.about .arrows :first-child{
+ .arrows :first-child{
 clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
   @apply w-[5vh] h-[5vh] sm:w-[50%] sm:h-[10vh] bg-Orange translate-x-4 border-2 absolute right-1 md-lg-landscape:right-1 md-lg-portrait:-right-6 md:-right-2 2xl:-right-4
 }
 
-.about .arrows :last-child{
+ .arrows :last-child{
 clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
   @apply w-[5vh] h-[5vh] sm:w-[50%] sm:h-[10vh] bg-black/50 border-2 absolute right-4
 }
