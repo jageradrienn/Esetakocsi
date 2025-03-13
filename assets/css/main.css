@@ -235,6 +235,7 @@ h1{
 
 .about .arrow-wrapper{
   @apply flex flex-col items-end
+  
 }
 
 .arrows{

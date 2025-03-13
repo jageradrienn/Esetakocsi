@@ -90,17 +90,17 @@ const slides = ref([
       </div>
     </section>
 
-    <section id="about" class="w-full h-[70vh] px-8 mt-20 sm:mt-10">
+    <section id="about" class="w-full h-[70vh] px-8 mt-20 xxs:mt-48 xs:mt-32 sm:mt-10">
       <div class="w-full sm:w-1/2 h-[25%] sm:h-[40%] bg-red-400" style="shape-outside:border-box; float:left">
-        <div class="wordwrapper flex justify-start gap-2 items-start w-full h-full">
+        <div class="wordwrapper flex justify-start  items-start w-full h-full">
           <h2 class="font-krona text-[12vw] sm:text-[6.5vw]">R</h2>
           <div
-            class="letterwrapper w-[30%] h-[50%] sm:h-[40%] lg:h-[60%] 2xl:h-full -translate-y-2 2xl:-translate-y-14 flex flex-col items-center gap-1 lg:gap-4 flex-shrink-0 ">
+            class="letterwrapper w-[25%] h-[50%] sm:h-[40%] lg:h-[60%] 2xl:h-full -translate-y-2 2xl:-translate-y-14 flex flex-col items-center gap-1 lg:gap-4 flex-shrink-0 ">
             <img src="/public/icons/caret.svg" alt="about" class="w-[30%]">
-            <div class="owrapper w-full h-full relative ">
-              <img src="/public/icons/striped-circle.svg" alt="about" class="w-full h-full">
+            <div class="owrapper relative ">
+              <img src="/public/icons/striped-circle.svg" alt="about">
               <div
-                class="creamcircle w-[17vw] h-[17vw]  bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 ">
+                class="creamcircle w-[80%] h-[80%] bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
               </div>
             </div>
           </div>
