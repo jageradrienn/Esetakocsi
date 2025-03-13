@@ -90,22 +90,20 @@ const slides = ref([
       </div>
     </section>
 
-    <section id="about" class="w-full h-[70vh] px-8 mt-20 xxs:mt-48 xs:mt-32 sm:mt-10">
-      <div class="w-full sm:w-1/2 h-[25%] sm:h-[40%] bg-red-400" style="shape-outside:border-box; float:left">
-        <div class="wordwrapper flex justify-start  items-start w-full h-full">
-          <h2 class="font-krona text-[12vw] sm:text-[6.5vw]">R</h2>
-          <div
-            class="letterwrapper w-[25%] h-[50%] sm:h-[40%] lg:h-[60%] 2xl:h-full -translate-y-2 2xl:-translate-y-14 flex flex-col items-center gap-1 lg:gap-4 flex-shrink-0 ">
-            <img src="/public/icons/caret.svg" alt="about" class="w-[30%]">
-            <div class="owrapper relative ">
+    <section id="about" class="about">
+      <div class="about-shape">
+        <div class="word-wrapper">
+          <h2>R</h2>
+          <div class="letter-wrapper">
+            <img src="/public/icons/caret.svg" alt="about" class="w-[40%]">
+            <div class="o-wrapper">
               <img src="/public/icons/striped-circle.svg" alt="about">
-              <div
-                class="creamcircle w-[80%] h-[80%] bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+              <div class="cream-circle">
               </div>
             </div>
           </div>
-          <div class="arrowwrapper flex flex-col items-end">
-            <h2 class="font-krona text-[12vw] sm:text-[6.5vw]">LUNK</h2>
+          <div class="arrow-wrapper">
+            <h2>LUNK</h2>
             <div class="arrows">
               <div></div>
               <div></div>
@@ -114,13 +112,13 @@ const slides = ref([
         </div>
       </div>
       <article class="about-article">
-        <p>Számunkra nagyon fontos érték az élmény, amellyel a mai rohanó világban kapcsolódhatunk másokhoz,
+        <p>Számunkra nagyon fontos érték az élmény, amellyel a mai rohanó világban kapcsolódhatunk egymáshoz,
           önmagunkhoz, a természethez, látnivalókhoz, vidámsághoz. Mi magunk is kerestük, kutattuk az új élményszerzési
           lehetőségeket a mindennapjainkban. Mígnem érkezett hozzánk egy lehetőség, amelyből pár évnyi tervezéssel,
           kutatással, tanulással és kreatív munkával megszülethetett az Esétakocsi. </p>
         <br>
         <p>Csapatunk azért hozta létre ezt a különleges
-          szolgáltatást, hogy a mozgás örömét és a felfedezés szabadságát mindenki számára elérhetővé tegye
+          szolgáltatást, hogy az utazás örömét és a felfedezés szabadságát mindenki számára elérhetővé tegye
           Magyarországon egyedülálló módon. Tényleg NINCS MÁSODIK! Tényleg nincs más, ahol ezt az élményt megszerezhetik
           az érdeklődők. Ezek az elektromos kiskocsik nemcsak egyedi megjelenésükkel, hanem sokoldalú
           felhasználhatóságukkal is kitűnnek: gyerektáborok, családi túrák, városnéző kalandok, csapatépítők és piknikek

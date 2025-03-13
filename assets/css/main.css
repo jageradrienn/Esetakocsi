@@ -173,7 +173,7 @@ h1{
 }
 
 .enum{
-  @apply h-[80vh] sm:h-[40vh] md-lg-portrait:h-[40vh] lg:h-[50vh] xl:h-[70vh] w-full xxs-xs-mini:text-[3.7vw] sm:text-[1.5vw] relative md-xl:flex sm:mt-10 sm:mb-32 md:mb-16
+  @apply h-[80vh] sm:h-[40vh] md-lg-portrait:h-[40vh] lg:h-[50vh] xl:h-[70vh] w-full xxs-xs-mini:text-[3.7vw] sm:text-[1.7vw] relative md-xl:flex sm:mt-10 sm:mb-32 md:mb-16
 }
 
 .orange-circle{
@@ -199,16 +199,56 @@ h1{
 }
 
 .about{
-  @apply py-16 px-8 flex flex-col xl:flex-row gap-0 justify-start items-start xl:gap-[25%] 2xl:gap-10 3xl:gap-0 w-full h-[70vh] xxs:mt-28 xs:mt-20 
+  @apply w-full h-[70vh] px-8 mt-20 xxs:mt-48 xs:mt-32 sm:mt-10
+}
+
+.about-shape{
+  shape-outside:border-box;
+  float:left;
+  @apply w-full sm:w-[50%] h-[25%] sm:h-[50%]
 }
 
 .about h2, .mission h2{
-  @apply font-krona text-[4.5vh] sm:text-[9vh]
+  @apply font-krona text-[12vw] sm:text-[6.5vw]
+}
+
+.about .word-wrapper{
+  @apply flex justify-start items-start gap-5 w-full h-full
+}
+
+.letter-wrapper{
+  @apply  w-[25%] h-[50%] sm:h-[40%] lg:h-[60%] 2xl:h-full -translate-y-2 2xl:-translate-y-14 flex flex-col items-center gap-1 lg:gap-4 flex-shrink-0
+}
+
+.o-wrapper{
+  @apply  relative w-[125%]
+}
+
+.cream-circle{
+  @apply w-[80%] h-[80%] bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 
+}
+
+.about .arrow-wrapper{
+  @apply flex flex-col items-start w-full h-full
+}
+
+.arrows{
+@apply w-1/2 h-[40%] flex justify-end items-center relative translate-x-[100%] sm:translate-x-[80%] xl:translate-x-[70%] 
+}
+
+ .arrows :first-child{
+clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
+  @apply bg-Orange border-2 w-[5vh] h-[5vh] translate-x-4 sm:translate-x-0 sm:scale-125 lg:scale-150 2xl:scale-[200%]
+}
+
+ .arrows :last-child{
+clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
+  @apply  bg-black/40 border-2 w-[5vh] h-[5vh] sm:scale-125 lg:scale-150 2xl:scale-[200%]
 }
 
 .about-article p, .mission-article p{
   line-height:3rem !important;
-@apply text-justify sm:text-xl xl:text-[1.5rem]
+@apply text-justify sm:text-[1.7vw]
 }
 
 @media (min-width:325px) and (max-width:1024px){
@@ -217,42 +257,7 @@ h1{
   }
 }
 
-.about .word-wrapper{
-  @apply flex justify-center sm:justify-start gap-2 items-start w-full sm:w-[50%] xl-2xl:w-[30%] flex-shrink-0
-}
-
-.letter-wrapper{
-  @apply w-[42%] sm:w-[47%] xl-2xl:w-[60%] h-full -translate-y-14 2xl:-translate-y-28 flex flex-col items-center gap-4 flex-shrink-0 
-}
-
-.o-wrapper{
-  @apply relative 
-}
-
-.cream-circle{
-  @apply w-[80%] h-[80%] bg-Cream rounded-full absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 
-}
-
-.about .arrow-wrapper{
-  @apply flex flex-col items-end
-  
-}
-
-.arrows{
-@apply w-full mt-5 sm:mt-0 flex justify-end items-center relative
-}
-
- .arrows :first-child{
-clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
-  @apply w-[5vh] h-[5vh] sm:scale-125 lg:scale-150 2xl:scale-[200%] bg-Orange sm:translate-y-12 border-2 absolute 
-}
-
- .arrows :last-child{
-clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
-  @apply w-[5vh] h-[5vh] sm:scale-125 lg:scale-150 2xl:scale-[200%] bg-black/40 border-2 absolute sm:translate-y-12 right-12 2xl:right-20
-}
-
-.mission{
+/* .mission{
     @apply py-16 px-8 flex flex-col xl:flex-row gap-0 justify-around items-start w-full h-[70vh] xxs:mt-28 xs:mt-20 relative
 }
 
@@ -288,4 +293,4 @@ clip-path: polygon(0 0, 74% 50%, 0 100%, 0% 70%, 29% 50%, 0 30%);
 
 .mission .orange-dot{
   @apply w-[30px] h-[30px] sm:w-[50px] sm:h-[50px] xl:w-[70px] xl:h-[70px] bg-Orange rounded-full
-}
+} */
