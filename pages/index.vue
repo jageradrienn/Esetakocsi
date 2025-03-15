@@ -64,40 +64,45 @@ onMounted(() => {
 
     </section>
     <section class="description">
-      <p><span class="font-otomanopee text-[5vw]">Mi az </span><span class="font-bold text-[8vw]">E</span><span
-          class="font-bold text-[5vw]"> -sétakocsi?</span></p>
-      <p class="description-striped">ÉLMÉNYJÁRMŰ</p>
-      <article class="description-wrapper grid grid-cols-[1fr] md:grid-cols-[1fr_2fr] gap-4 mt-12">
-        <img src="/img/diagonal-striped-bg.webp" alt="diagonal striped background"
-          class="w-full object-contain rounded-[20%] opacity-40">
-        <div>
-          <p>Az E-sétakocsik két erős elektromos motorral működnek, kifejezetten terepre tervezve. Dupla akkumulátoros
+      <p><span class="font-otomanopee text-[5vw] ">Mi az </span><span class="font-bold text-[8vw]">E</span><span
+          class="font-otomanopee  text-[5vw]">
+          -sétakocsi?</span></p>
+      <p class="description-striped mt-6 sm:mt-28">ÉLMÉNYJÁRMŰ</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10 mt-28 mb-40">
+        <article class="relative group bg-white border border-[#aad9ff] hover:bg-lime-200/5 rounded-3xl drop-shadow-lg">
+          <figure class="w-full aspect-video overflow-hidden rounded-3xl">
+            <img class="w-full object-cover opacity-40 group-hover:scale-105 transition duration-500 "
+              src="/img/diagonal-striped-bg.webp" alt="diagonal striped background">
+          </figure>
+          <p class="xxs-xs-mini:text-[3.7vw] sm:text-[1.7vw] p-10 text-justify">Az E-sétakocsik két erős elektromos
+            motorral
+            működnek,
+            kifejezetten terepre tervezve. Dupla akkumulátoros
             felszereltségükkel, egyetlen feltöltéssel 25-30 km távolságot képesek megtenni. A töltöttségi állapotról
             telefonos applikáció ad információt.
             A rajta lévő joystickes vezérlés könnyen elsajátítható, mindössze néhány perc gyakorlást igényel. </p>
-          <br>
-          <p>Akár 10 km/h sebességgel is haladhatnak, legyen szó nehéz terepről, erdei ösvényekről, rétekről vagy
-            kavicsos
-            utakról. Közúti közlekedésre is alkalmas, mert rendelkezik világítással, irányjelzővel, hangjelzéssel, hátsó
-            világítással.</p>
-          <br>
-          <p> A utasok kényelme érdekében felszereltük napvédővel, italtartóval, telefontartóval, valamint egy vízálló
-            tároló zsákkal is, a túrafelszerelések, piknik kellékek, személyes holmik, stb. szállítására. Az első
-            kerekek
-            és a lábtartó előre-hátra
-            állíthatók a testmagasságához igazítva.</p>
-          <br>
-          <p>Gyakorlatilag minden korosztálynak élményt nyújthat a vele való kirándulás. Családok, baráti társaságok
-            munkahelyi közösségek kedvelt programja lehet, mivel NAGY„sétákat” lehet velük tenni. Kiváló lehetőséget
-            biztosítanak családi rendezvények színesítésére, hosszabb kirándulásokra, ahol a résztvevők piknikezhetnek,
-            sétálhatnak, vagy más szabadidős
-            tevékenységeket élvezhetnek.</p>
-          <br>
-          <p>Tökéletesek ügyességi versenyek lebonyolítására, mivel az optimális irányítás mindössze a vezető
-            kézügyességétől függ. Éjszakai kirándulásokra is bevethetők, különleges élménnyel gazdagítva az utazó
-            közönséget.</p>
-        </div>
-      </article>
+        </article>
+        <article class="relative group bg-white border border-[#aad9ff] hover:bg-lime-200/5 rounded-3xl drop-shadow-lg">
+          <figure class="w-full aspect-video overflow-hidden rounded-3xl">
+            <img class="w-full object-cover opacity-40 group-hover:scale-105 transition duration-500"
+              src="/img/grey-striped-bg.webp" alt="diagonal striped background">
+          </figure>
+          <p class="xxs-xs-mini:text-[3.7vw] sm:text-[1.7vw] p-10 text-justify">Akár 10 km/h sebességgel is haladhatnak,
+            legyen szó nehéz terepről, erdei ösvényekről, rétekről vagy kavicsos utakról. Közúti közlekedésre is
+            alkalmas, mert rendelkezik világítással, irányjelzővel, hangjelzéssel, hátsó világítással. </p>
+        </article>
+        <article class="relative group bg-white border border-[#aad9ff] hover:bg-lime-200/5 rounded-3xl drop-shadow-lg">
+          <figure class="w-full aspect-video overflow-hidden rounded-3xl">
+            <img class="w-full object-cover opacity-40 group-hover:scale-105 transition duration-500"
+              src="/img/diagonal-striped-bg.webp" alt="diagonal striped background">
+          </figure>
+          <p class="xxs-xs-mini:text-[3.7vw] sm:text-[1.7vw] p-10 text-justify">A utasok kényelme érdekében felszereltük
+            napvédővel, italtartóval, telefontartóval, valamint egy vízálló tároló zsákkal is, a túrafelszerelések,
+            piknik kellékek, személyes holmik, stb. szállítására. Az első kerekek és a lábtartó előre-hátra állíthatók a
+            testmagasságához igazítva. </p>
+        </article>
+      </div>
     </section>
 
     <section class="enum ">
@@ -106,23 +111,24 @@ onMounted(() => {
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[82vw] sm:translate-x-[18%] sm:-translate-y-[85%]"
           :avatarDirection=true avatarImg="img/playground.webp" avatarImgSize="h-[20vw] sm:h-[12vw]"
-          avatarLabel="Játékos feladatokkal, ügyességi versenyekkel, szórakoztató kihívásokkal színesíti meg a gyermektáborok, fiatal közösségek, gyermek- és családi rendezvények programjait." />
+          avatarLabel="Játékos feladatokkal, ügyességi versenyekkel (az optimális irányítás mindössze a vezető
+            kézügyességétől függ), szórakoztató kihívásokkal színesíti meg a gyermektáborok, fiatal közösségek, gyermek- és családi rendezvények programjait." />
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[72vw] sm:translate-x-[34.5%] sm:-translate-y-[125%]"
           :avatarDirection=true avatarImg="img/city2.webp" avatarImgSize="h-[20vw] sm:h-[10.5vw]"
-          avatarLabel="Egyedibb megjelenéssel és élménnyel gazdagított városnézést is lehetővé tesz. Adott idő alatt több látnivaló meglátogatása, kényelem és praktikusság jellemzi." />
+          avatarLabel="Egyedibb megjelenéssel és élménnyel gazdagított városnézést is lehetővé tesz. Adott idő alatt több látnivaló meglátogatása, NAGY „séták” kivitelezése, kényelem és praktikusság jellemzi." />
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[69vw] sm:translate-x-[40%] sm:-translate-y-[140%]"
           :avatarDirection=true avatarImg="img/forest.webp" avatarImgSize="h-[20vw] sm:h-[9vw]"
-          avatarLabel="Túrázáshoz, kiránduláshoz is használható, pl a távolság megnövelésére, kalandos utazássá varázsolva a természetjárást. " />
+          avatarLabel="Túrázáshoz, kiránduláshoz is használható a távolság megnövelésére, éjszakai kirándulásokra is bevethetők, kalandos utazássá varázsolva a természetjárást. " />
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[72vw] sm:translate-x-[34.5%] sm:-translate-y-[153%]"
-          :avatarDirection=true avatarImg="img/fireplace.webp" avatarImgSize="h-[20vw] sm:h-[8vw]"
-          avatarLabel="Csapatépítő tréningek, születésnapi partik, baráti összejövetelek, fesztiválok, szabadtéri programok, leány- és legénybúcsúk vidámságot, közös élményt nyújtó segítője.." />
+          :avatarDirection=true avatarImg="img/fireplace.webp" avatarImgSize="h-[20vw] sm:h-[8vw]" avatarLabel="Csapatépítő tréningek, munkahelyi közösségek, születésnapi partik, baráti összejövetelek, fesztiválok, szabadtéri programok, szabadidős
+            tevékenységek, leány- és legénybúcsúk vidámságot, közös élményt nyújtó segítője." />
 
         <Avatar class="enumlist-items w-[80vw] sm:w-[82vw] sm:translate-x-[24%] sm:-translate-y-[195%]"
           :avatarDirection=true avatarImg="img/arboretum.webp" avatarImgSize="h-[20vw] sm:h-[7vw]"
-          avatarLabel="Arborétumok, skanzenek, parkok, sétányok, ligetek békés, csendes suhanója." />
+          avatarLabel="Arborétumok, skanzenek, parkok, sétányok, ligetek békés, csendes suhanója családok, mozgáskorlátozottak és idősek számára." />
       </div>
     </section>
 

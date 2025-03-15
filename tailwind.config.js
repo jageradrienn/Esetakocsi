@@ -33,16 +33,16 @@ module.exports = {
       },
 
       fontFamily: {
-        'sans': ['"Kodchasan"', ...defaultTheme.fontFamily.sans],
-        '300': '"Kodchasan-Light"',
-        '400': '"Kodchasan-Regular"',
-        '500': '"Kodchasan-Medium"',
-        '600': '"Kodchasan-Semibold"',
-        'bold': '"Kodchasan-Bold"',
-        'krona': '"Krona One"',
-        'rubik': '"RubikMonoOne-Regular"',
+        'sans': ['Kodchasan', ...defaultTheme.fontFamily.sans],
+        '300': 'Kodchasan-Light',
+        '400': 'Kodchasan-Regular',
+        '500': 'Kodchasan-Medium',
+        '600': 'Kodchasan-Semibold',
+        'bold': 'Kodchasan-Bold',
+        'krona': 'Krona One',
+        'rubik': 'RubikMonoOne-Regular',
         'otomanopee': 'Otomanopee-One',
-        'stripes': "Stripes",
+        'stripes': 'Stripes',
         'marigo':'Marigo'
       },
 

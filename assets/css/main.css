@@ -163,7 +163,7 @@ h1{
 }
 
 .description{
-@apply flex flex-col items-center justify-between w-full h-[80%] sm:scale-y-75 pt-[2vw] pr-[6vw] pb-[5.75vw] pl-[6vw] mb-10
+@apply flex flex-col items-center justify-between w-full h-[80%] sm:scale-[110%] pt-[2vw] pr-[6vw] pb-[5.75vw] pl-[6vw] mb-10 mt-10 sm:mt-40
 }
 
 .description-striped{
