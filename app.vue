@@ -19,13 +19,10 @@ import Avatar from './components/Avatar.vue';
               <NuxtLink to="#about">Rólunk</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="#mission">Küldetésünk</NuxtLink>
+              <NuxtLink to="#offer">Szolgáltatásaink</NuxtLink>
             </li>
             <li>
               <NuxtLink to="#gallery">Galéria</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="#offer">Ajánlatunk</NuxtLink>
             </li>
             <li>
               <NuxtLink to="#contact">Kapcsolat</NuxtLink>

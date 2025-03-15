@@ -10,29 +10,34 @@ register();
 
 const slides = ref([
   {
-    sliderImage: 'img/cleverchair.webp',
+    sliderImage: '/img/cleverchair.webp',
     heading: "Ügyeskocsik",
   },
   {
-    sliderImage: 'img/citychair.webp',
+    sliderImage: '/img/citychair.webp',
     heading: "Városikocsik",
   },
   {
-    sliderImage: 'img/tripchair.webp',
+    sliderImage: '/img/tripchair.webp',
     heading: "Túrakocsik",
   },
   {
-    sliderImage: 'img/partychair.webp',
+    sliderImage: '/img/partychair.webp',
     heading: "Bulikocsik",
   },
   {
-    sliderImage: 'img/walkingchair.webp',
+    sliderImage: '/img/walkingchair.webp',
     heading: "Sétakocsik",
   }
 ]);
 
+const isReady = ref(false);
 
-
+onMounted(() => {
+  setTimeout(() => {
+    isReady.value = true;
+  }, 50);
+});
 </script>
 
 <template>
@@ -41,7 +46,7 @@ const slides = ref([
       <div class="hero-base"></div>
       <div class="hero-slide-wrapper">
         <h1>VALÓBAN NINCS MÁSODIK!</h1>
-        <swiper-container class="hero-swiper" :breakpoints="{
+        <swiper-container v-if="isReady" class="hero-swiper" :breakpoints="{
           768: { slidesPerView: 3 },
           640: { slidesPerView: 2 },
           450: { slidesPerView: 1 }
@@ -58,13 +63,18 @@ const slides = ref([
       </div>
 
     </section>
-    <section class="title">
-      <p><span class="font-krona text-[5vw]">Mi az </span><span class="font-bold text-[8vw]">E</span><span
+    <section class="description">
+      <p><span class="font-otomanopee text-[5vw]">Mi az </span><span class="font-bold text-[8vw]">E</span><span
           class="font-bold text-[5vw]"> -sétakocsi?</span></p>
-      <p class="title-striped">ÉLMÉNYJÁRMŰ</p>
+      <p class="description-striped">ÉLMÉNYJÁRMŰ</p>
+      <article class="description-wrapper grid grid-cols-[1fr] md:grid-cols-[1fr_2fr] gap-4 mt-12">
+        <img src="/img/diagonal-striped-bg.webp" alt="diagonal striped background"
+          class="w-full object-contain rounded-[20%] opacity-40">
+        <p>lorem ipsum</p>
+      </article>
     </section>
 
-    <section class="enum">
+    <section class="enum ">
       <div class="orange-circle">
         <img src="/img/whiteStripedBall.webp" alt="ball" class="orange-circle-striped">
 
