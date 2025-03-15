@@ -70,7 +70,33 @@ onMounted(() => {
       <article class="description-wrapper grid grid-cols-[1fr] md:grid-cols-[1fr_2fr] gap-4 mt-12">
         <img src="/img/diagonal-striped-bg.webp" alt="diagonal striped background"
           class="w-full object-contain rounded-[20%] opacity-40">
-        <p>lorem ipsum</p>
+        <div>
+          <p>Az E-sétakocsik két erős elektromos motorral működnek, kifejezetten terepre tervezve. Dupla akkumulátoros
+            felszereltségükkel, egyetlen feltöltéssel 25-30 km távolságot képesek megtenni. A töltöttségi állapotról
+            telefonos applikáció ad információt.
+            A rajta lévő joystickes vezérlés könnyen elsajátítható, mindössze néhány perc gyakorlást igényel. </p>
+          <br>
+          <p>Akár 10 km/h sebességgel is haladhatnak, legyen szó nehéz terepről, erdei ösvényekről, rétekről vagy
+            kavicsos
+            utakról. Közúti közlekedésre is alkalmas, mert rendelkezik világítással, irányjelzővel, hangjelzéssel, hátsó
+            világítással.</p>
+          <br>
+          <p> A utasok kényelme érdekében felszereltük napvédővel, italtartóval, telefontartóval, valamint egy vízálló
+            tároló zsákkal is, a túrafelszerelések, piknik kellékek, személyes holmik, stb. szállítására. Az első
+            kerekek
+            és a lábtartó előre-hátra
+            állíthatók a testmagasságához igazítva.</p>
+          <br>
+          <p>Gyakorlatilag minden korosztálynak élményt nyújthat a vele való kirándulás. Családok, baráti társaságok
+            munkahelyi közösségek kedvelt programja lehet, mivel NAGY„sétákat” lehet velük tenni. Kiváló lehetőséget
+            biztosítanak családi rendezvények színesítésére, hosszabb kirándulásokra, ahol a résztvevők piknikezhetnek,
+            sétálhatnak, vagy más szabadidős
+            tevékenységeket élvezhetnek.</p>
+          <br>
+          <p>Tökéletesek ügyességi versenyek lebonyolítására, mivel az optimális irányítás mindössze a vezető
+            kézügyességétől függ. Éjszakai kirándulásokra is bevethetők, különleges élménnyel gazdagítva az utazó
+            közönséget.</p>
+        </div>
       </article>
     </section>
 
