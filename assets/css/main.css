@@ -170,12 +170,32 @@ h1{
 @apply font-stripes text-[13vw] h-full
 }
 
+.description-grid-container{
+  @apply grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10 mt-16 sm:mt-28 mb-10 sm:mb-40 
+}
+
+.description-grid-items{
+  @apply relative bg-white border border-Orange hover:bg-lime-200/5 rounded-3xl drop-shadow-lg
+}
+
+.description-grid-items figure{
+@apply w-full aspect-video overflow-hidden rounded-3xl
+}
+
+.description-grid-items p{
+  @apply xxs-xs-mini:text-[3.7vw] sm:text-[1.35vw] leading-8 sm:leading-10 p-10 text-justify
+}
+
+.description-img{
+  @apply opacity-40 group-hover:scale-105 transition duration-500
+}
+
 .enum{
-  @apply h-[80vh] sm:h-[40vh] md-lg-portrait:h-[40vh] lg:h-[50vh] xl:h-[70vh] w-full xxs-xs-mini:text-[3.7vw] sm:text-[1.7vw] relative md-xl:flex sm:mt-10 sm:mb-32 md:mb-16
+  @apply h-[80vh] sm:h-[40vh] md-lg-portrait:h-[40vh] lg:h-[50vh] xl:h-[70vh] w-full xxs-xs-mini:text-[3.7vw] sm:text-[1.6vw] relative md-xl:flex sm:mt-10 md:mt-28 sm:mb-32 md:mb-16
 }
 
 .orange-circle{
-  @apply bg-none sm:bg-Orange/10 sm:rounded-full sm:w-[30vw] sm:h-[30vw] sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:-translate-x-10 flex flex-col gap-8 translate-x-10 sm:block
+  @apply bg-none sm:bg-lime-200/10 border border-Orange drop-shadow-lg sm:rounded-full sm:w-[30vw] sm:h-[30vw] sm:absolute sm:top-1/2 sm:-translate-y-1/2 sm:-translate-x-10 flex flex-col gap-8 translate-x-10 sm:block
 }
 
 .orange-circle::before{
@@ -193,7 +213,7 @@ h1{
 }
 
 .enumlist-items{
-  @apply text-justify gap-4 sm:gap-8
+  @apply text-justify gap-4 sm:gap-8 break-words hyphens-auto
 }
 
 .about{

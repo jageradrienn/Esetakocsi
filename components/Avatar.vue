@@ -22,6 +22,6 @@ const props = defineProps({
 
 <style scoped>
 .avatar {
-    @apply flex items-center
+    @apply flex
 }
 </style>

@@ -40,8 +40,11 @@ onMounted(() => {
 });
 </script>
 
+
 <template>
   <div>
+
+
     <section id="home" class="hero">
       <div class="hero-base"></div>
       <div class="hero-slide-wrapper">
@@ -54,28 +57,31 @@ onMounted(() => {
           preload-images="false" style="width:100vw; transition: transform 0.6s ease-in-out;">
           <swiper-slide v-for="(slide, index) in slides" :key="index">
             <div class="balls-wrapper">
-              <img src="/img/whiteStripedBall.webp" alt="ball" class="white-ball">
+              <NuxtImg src="/img/whiteStripedBall.webp" alt="ball" class="white-ball" />
               <img :src="slide.sliderImage" alt="slidePic" ref="sliderImages" class="slider-pics">
               <h2>{{ slide.heading }}</h2>
             </div>
           </swiper-slide>
         </swiper-container>
       </div>
-
     </section>
+
+
     <section class="description">
       <p><span class="font-otomanopee text-[5vw] ">Mi az </span><span class="font-bold text-[8vw]">E</span><span
           class="font-otomanopee  text-[5vw]">
           -sétakocsi?</span></p>
-      <p class="description-striped mt-6 sm:mt-28">ÉLMÉNYJÁRMŰ</p>
+      <p class="description-striped mt-6 sm:mt-28 text-Orange/40"
+        style="-webkit-text-stroke: 0.5px; -webkit-text-stroke-color: black;">ÉLMÉNYJÁRMŰ</p>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-x-6 gap-y-10 mt-28 mb-40">
-        <article class="relative group bg-white border border-[#aad9ff] hover:bg-lime-200/5 rounded-3xl drop-shadow-lg">
-          <figure class="w-full aspect-video overflow-hidden rounded-3xl">
-            <img class="w-full object-cover opacity-40 group-hover:scale-105 transition duration-500 "
-              src="/img/diagonal-striped-bg.webp" alt="diagonal striped background">
+      <div class="description-grid-container ">
+        <article class="description-grid-items group">
+          <figure>
+            <NuxtImg class="description-img h-[13vw] w-[15vw] mt-7 mx-auto" src="/img/striped-round-bg.webp"
+              alt="diagonal striped background" />
           </figure>
-          <p class="xxs-xs-mini:text-[3.7vw] sm:text-[1.7vw] p-10 text-justify">Az E-sétakocsik két erős elektromos
+          <p>
+            Az E-sétakocsik két erős elektromos
             motorral
             működnek,
             kifejezetten terepre tervezve. Dupla akkumulátoros
@@ -83,21 +89,25 @@ onMounted(() => {
             telefonos applikáció ad információt.
             A rajta lévő joystickes vezérlés könnyen elsajátítható, mindössze néhány perc gyakorlást igényel. </p>
         </article>
-        <article class="relative group bg-white border border-[#aad9ff] hover:bg-lime-200/5 rounded-3xl drop-shadow-lg">
-          <figure class="w-full aspect-video overflow-hidden rounded-3xl">
-            <img class="w-full object-cover opacity-40 group-hover:scale-105 transition duration-500"
-              src="/img/grey-striped-bg.webp" alt="diagonal striped background">
+        <article class="description-grid-items group">
+          <figure>
+            <NuxtImg class="description-img h-[14vw] w-[16vw] mt-5 mx-auto" src="/img/striped-round-bg2.webp"
+              alt="diagonal striped background" />
           </figure>
-          <p class="xxs-xs-mini:text-[3.7vw] sm:text-[1.7vw] p-10 text-justify">Akár 10 km/h sebességgel is haladhatnak,
+          <p>
+            Akár 10 km/h sebességgel is
+            haladhatnak,
             legyen szó nehéz terepről, erdei ösvényekről, rétekről vagy kavicsos utakról. Közúti közlekedésre is
             alkalmas, mert rendelkezik világítással, irányjelzővel, hangjelzéssel, hátsó világítással. </p>
         </article>
-        <article class="relative group bg-white border border-[#aad9ff] hover:bg-lime-200/5 rounded-3xl drop-shadow-lg">
-          <figure class="w-full aspect-video overflow-hidden rounded-3xl">
-            <img class="w-full object-cover opacity-40 group-hover:scale-105 transition duration-500"
-              src="/img/diagonal-striped-bg.webp" alt="diagonal striped background">
+        <article class="description-grid-items group">
+          <figure>
+            <NuxtImg class="description-img h-[14vw] w-[16vw] mt-5 mx-auto" src="/img/striped-round-bg3.webp"
+              alt="diagonal striped background" />
           </figure>
-          <p class="xxs-xs-mini:text-[3.7vw] sm:text-[1.7vw] p-10 text-justify">A utasok kényelme érdekében felszereltük
+          <p>A
+            utasok kényelme érdekében
+            felszereltük
             napvédővel, italtartóval, telefontartóval, valamint egy vízálló tároló zsákkal is, a túrafelszerelések,
             piknik kellékek, személyes holmik, stb. szállítására. Az első kerekek és a lábtartó előre-hátra állíthatók a
             testmagasságához igazítva. </p>
@@ -105,41 +115,43 @@ onMounted(() => {
       </div>
     </section>
 
+
     <section class="enum ">
       <div class="orange-circle">
-        <img src="/img/whiteStripedBall.webp" alt="ball" class="orange-circle-striped">
+        <NuxtImg src="/img/whiteStripedBall.webp" alt="ball" class="orange-circle-striped" />
 
-        <Avatar class="enumlist-items w-[80vw] sm:w-[82vw] sm:translate-x-[18%] sm:-translate-y-[85%]"
+        <Avatar class="enumlist-items items-start w-[80vw] sm:w-[82vw] sm:translate-x-[18%] sm:-translate-y-[90%]"
           :avatarDirection=true avatarImg="img/playground.webp" avatarImgSize="h-[20vw] sm:h-[12vw]"
-          avatarLabel="Játékos feladatokkal, ügyességi versenyekkel (az optimális irányítás mindössze a vezető
+          avatarLabel="Játékos feladatokkal, ügyességi versenyekkel (az optimális irányítás a vezető
             kézügyességétől függ), szórakoztató kihívásokkal színesíti meg a gyermektáborok, fiatal közösségek, gyermek- és családi rendezvények programjait." />
 
-        <Avatar class="enumlist-items w-[80vw] sm:w-[72vw] sm:translate-x-[34.5%] sm:-translate-y-[125%]"
+        <Avatar class="enumlist-items items-center w-[80vw] sm:w-[72vw] sm:translate-x-[34.5%] sm:-translate-y-[125%]"
           :avatarDirection=true avatarImg="img/city2.webp" avatarImgSize="h-[20vw] sm:h-[10.5vw]"
           avatarLabel="Egyedibb megjelenéssel és élménnyel gazdagított városnézést is lehetővé tesz. Adott idő alatt több látnivaló meglátogatása, NAGY „séták” kivitelezése, kényelem és praktikusság jellemzi." />
 
-        <Avatar class="enumlist-items w-[80vw] sm:w-[69vw] sm:translate-x-[40%] sm:-translate-y-[140%]"
+        <Avatar class="enumlist-items items-center w-[80vw] sm:w-[69vw] sm:translate-x-[40%] sm:-translate-y-[140%]"
           :avatarDirection=true avatarImg="img/forest.webp" avatarImgSize="h-[20vw] sm:h-[9vw]"
           avatarLabel="Túrázáshoz, kiránduláshoz is használható a távolság megnövelésére, éjszakai kirándulásokra is bevethetők, kalandos utazássá varázsolva a természetjárást. " />
 
-        <Avatar class="enumlist-items w-[80vw] sm:w-[72vw] sm:translate-x-[34.5%] sm:-translate-y-[153%]"
+        <Avatar class="enumlist-items items-center w-[80vw] sm:w-[72vw] sm:translate-x-[34.5%] sm:-translate-y-[153%]"
           :avatarDirection=true avatarImg="img/fireplace.webp" avatarImgSize="h-[20vw] sm:h-[8vw]" avatarLabel="Csapatépítő tréningek, munkahelyi közösségek, születésnapi partik, baráti összejövetelek, fesztiválok, szabadtéri programok, szabadidős
             tevékenységek, leány- és legénybúcsúk vidámságot, közös élményt nyújtó segítője." />
 
-        <Avatar class="enumlist-items w-[80vw] sm:w-[82vw] sm:translate-x-[24%] sm:-translate-y-[195%]"
+        <Avatar class="enumlist-items items-end w-[80vw] sm:w-[82vw] sm:translate-x-[24%] sm:-translate-y-[190%]"
           :avatarDirection=true avatarImg="img/arboretum.webp" avatarImgSize="h-[20vw] sm:h-[7vw]"
           avatarLabel="Arborétumok, skanzenek, parkok, sétányok, ligetek békés, csendes suhanója családok, mozgáskorlátozottak és idősek számára." />
       </div>
     </section>
+
 
     <section id="about" class="about">
       <div class="about-shape">
         <div class="word-wrapper">
           <h2>R</h2>
           <div class="letter-wrapper">
-            <img src="/public/icons/caret.svg" alt="about" class="w-[40%]">
+            <NuxtImg src="/icons/caret.svg" alt="about" class="w-[40%]" />
             <div class="o-wrapper">
-              <img src="/public/icons/striped-circle.svg" alt="about">
+              <NuxtImg src="icons/striped-circle.svg" alt="about" />
               <div class="cream-circle">
               </div>
             </div>
@@ -170,6 +182,7 @@ onMounted(() => {
           bizalommal elérhetőségeinken! </p>
       </article>
     </section>
+
 
 
     <!-- <section id="about" class="about">
