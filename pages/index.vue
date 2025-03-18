@@ -58,7 +58,7 @@ onMounted(() => {
           <swiper-slide v-for="(slide, index) in slides" :key="index">
             <div class="balls-wrapper">
               <NuxtImg src="/img/whiteStripedBall.webp" alt="ball" class="white-ball" />
-              <img :src="slide.sliderImage" alt="slidePic" ref="sliderImages" class="slider-pics">
+              <NuxtImg :src="slide.sliderImage" alt="slidePic" ref="sliderImages" class="slider-pics" />
               <h2>{{ slide.heading }}</h2>
             </div>
           </swiper-slide>
@@ -67,18 +67,33 @@ onMounted(() => {
     </section>
 
 
-    <section class="description">
+
+
+    <section class="heading w-full p-8 text-center">
       <p><span class="font-otomanopee text-[5vw] ">Mi az </span><span class="font-bold text-[8vw]">E</span><span
           class="font-otomanopee  text-[5vw]">
           -sétakocsi?</span></p>
-      <p class="description-striped mt-6 sm:mt-28 text-Orange/40"
-        style="-webkit-text-stroke: 0.5px; -webkit-text-stroke-color: black;">ÉLMÉNYJÁRMŰ</p>
+      <div class="heading-grid-container h-[90vh] grid grid-cols-[85%_15%] grid-rows-2">
+        <p class="heading-striped text-[22vw] " style="-webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">
+          ÉLMÉNY</p>
+        <div class="row-span-2">
+          <p class="heading-striped text-[23vh] rotate-90 whitespace-nowrap translate-y-20"
+            style="-webkit-text-stroke: 0.5px; -webkit-text-stroke-color: black;">
+            JÁRMŰ</p>
+        </div>
+        <div class="-translate-y-24">
+          <NuxtImg src="/icons/littletrack.webp" alt="" />
 
+        </div>
+      </div>
+    </section>
+
+
+    <section class="description">
       <div class="description-grid-container ">
         <article class="description-grid-items group">
           <figure>
-            <NuxtImg class="description-img h-[13vw] w-[15vw] mt-7 mx-auto" src="/img/striped-round-bg.webp"
-              alt="diagonal striped background" />
+            <NuxtImg class="description-img" src="/icons/1_small.svg" alt="diagonal striped background" />
           </figure>
           <p>
             Az E-sétakocsik két erős elektromos
@@ -91,8 +106,7 @@ onMounted(() => {
         </article>
         <article class="description-grid-items group">
           <figure>
-            <NuxtImg class="description-img h-[14vw] w-[16vw] mt-5 mx-auto" src="/img/striped-round-bg2.webp"
-              alt="diagonal striped background" />
+            <NuxtImg class="description-img" src="/icons/2_small.svg" alt="diagonal striped background" />
           </figure>
           <p>
             Akár 10 km/h sebességgel is
@@ -102,8 +116,7 @@ onMounted(() => {
         </article>
         <article class="description-grid-items group">
           <figure>
-            <NuxtImg class="description-img h-[14vw] w-[16vw] mt-5 mx-auto" src="/img/striped-round-bg3.webp"
-              alt="diagonal striped background" />
+            <NuxtImg class="description-img" src="/icons/3_small.svg" alt="diagonal striped background" />
           </figure>
           <p>A
             utasok kényelme érdekében

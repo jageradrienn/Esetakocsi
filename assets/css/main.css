@@ -162,12 +162,13 @@ h1{
    @apply invisible font-otomanopee text-[4.5vw] sm:text-[3.5vw] absolute left-1/2 -translate-x-1/2 sm:left-[40vw] -top-[3.5vh] sm:top-[0.5vh] lg:-top-[1vw] 
 }
 
-.description{
-@apply flex flex-col items-center justify-between w-full h-[80%] sm:scale-[110%] pt-[2vw] pr-[6vw] pb-[5.75vw] pl-[6vw] mb-10 mt-10 sm:mt-40
-}
 
-.description-striped{
-@apply font-stripes text-[13vw] h-full
+.heading-striped{
+  @apply font-stripes text-Orange/40
+  }  
+
+.description{
+@apply flex flex-col items-center justify-between w-full h-[80%] sm:scale-[110%] pt-[2vw] pr-[6vw] pb-[5.75vw] pl-[6vw] mb-10 mt-10 sm:mt-[30vw]
 }
 
 .description-grid-container{
@@ -187,7 +188,7 @@ h1{
 }
 
 .description-img{
-  @apply opacity-40 group-hover:scale-105 transition duration-500
+  @apply opacity-60 group-hover:scale-[115%] transition duration-500 h-[13vw] w-[13vw] mt-4 mx-auto
 }
 
 .enum{
