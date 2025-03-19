@@ -167,6 +167,23 @@ h1{
   @apply font-stripes text-Orange/40
   }  
 
+@keyframes headingAnimateInit {
+  from
+  {
+    opacity:0;
+    transform: translateX(0);
+  }
+  to
+  {
+    opacity:1;
+    transform:translateX(55vw);
+  }
+}
+
+.heading-animate{
+ animation: headingAnimateInit 3s ease-in-out 1s forwards;
+}
+
 .description{
 @apply flex flex-col items-center justify-between w-full h-[80%] sm:scale-[110%] pt-[2vw] pr-[6vw] pb-[5.75vw] pl-[6vw] mb-10 mt-10 sm:mt-[30vw]
 }

@@ -73,16 +73,17 @@ onMounted(() => {
       <p><span class="font-otomanopee text-[5vw] ">Mi az </span><span class="font-bold text-[8vw]">E</span><span
           class="font-otomanopee  text-[5vw]">
           -sétakocsi?</span></p>
-      <div class="heading-grid-container h-[90vh] grid grid-cols-[85%_15%] grid-rows-2">
-        <p class="heading-striped text-[22vw] " style="-webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">
+      <div class="heading-grid-container h-[90vh] grid grid-cols-[85%_15%] grid-rows-2 p-10">
+        <p class="heading-striped text-[22vw] -translate-y-20"
+          style="-webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">
           ÉLMÉNY</p>
         <div class="row-span-2">
-          <p class="heading-striped text-[23vh] rotate-90 whitespace-nowrap translate-y-20"
+          <p class="font-bold text-DarkGrey text-[23vh] rotate-90 whitespace-nowrap -translate-y-10"
             style="-webkit-text-stroke: 0.5px; -webkit-text-stroke-color: black;">
             JÁRMŰ</p>
         </div>
-        <div class="-translate-y-24">
-          <NuxtImg src="/icons/esetakocsi_orange_small.webp" alt="esetakocsi_orange" class="w-[30vw] " />
+        <div class="move-img">
+          <NuxtImg src="/img/esetakocsi_orange_small.webp" alt="esetakocsi_orange" class="w-[22vw] heading-animate" />
         </div>
       </div>
     </section>
