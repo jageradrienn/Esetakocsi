@@ -82,8 +82,7 @@ onMounted(() => {
             JÁRMŰ</p>
         </div>
         <div class="-translate-y-24">
-          <NuxtImg src="/icons/littletrack.webp" alt="" />
-
+          <NuxtImg src="/icons/esetakocsi_orange_small.webp" alt="esetakocsi_orange" class="w-[30vw] " />
         </div>
       </div>
     </section>
