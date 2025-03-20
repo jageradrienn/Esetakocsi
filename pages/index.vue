@@ -67,13 +67,11 @@ onMounted(() => {
     </section>
 
 
-
-
-    <section class="heading w-full p-8 text-center">
-      <p><span class="font-otomanopee text-[5vw] ">Mi az </span><span class="font-bold text-[8vw]">E</span><span
+    <section class="heading w-full p-8 text-center mt-[15vw]">
+      <p><span class="font-otomanopee text-[5vw]">Mi az </span><span class="font-bold text-[8vw]">E</span><span
           class="font-otomanopee  text-[5vw]">
           -sétakocsi?</span></p>
-      <div class="heading-grid-container h-[90vh] grid grid-cols-[85%_15%] grid-rows-2 p-10">
+      <div class="heading-grid-container h-[90vh] grid grid-cols-[85%_15%] grid-rows-2 p-10 mt-20">
         <p class="heading-striped text-[22vw] -translate-y-20"
           style="-webkit-text-stroke: 1px; -webkit-text-stroke-color: black;">
           ÉLMÉNY</p>
@@ -82,14 +80,15 @@ onMounted(() => {
             style="-webkit-text-stroke: 0.5px; -webkit-text-stroke-color: black;">
             JÁRMŰ</p>
         </div>
-        <div class="move-img">
-          <NuxtImg src="/img/esetakocsi_orange_small.webp" alt="esetakocsi_orange" class="w-[22vw] heading-animate" />
+        <div>
+          <NuxtImg src="/img/esetakocsi_orange_small.webp" alt="esetakocsi_orange" class="moving-img heading-animate" />
         </div>
       </div>
     </section>
 
 
     <section class="description">
+      <h2 class="font-otomanopee text-[4.5vw] sm:text-[3.5vw]">Részletesebben...</h2>
       <div class="description-grid-container ">
         <article class="description-grid-items group">
           <figure>
